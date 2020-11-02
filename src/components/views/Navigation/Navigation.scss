@@ -1,0 +1,15 @@
+@import '../../../styles/settings.scss';
+@import '../../../styles/mixins.scss';
+
+.Navigation {
+  display: flex;
+  justify-content: flex-end;
+
+  font-size: $font-medium;
+  font-family: $font-family;
+  margin-right: 12rem;
+
+  &__Nav-link {
+    padding: 2rem;
+  }
+}

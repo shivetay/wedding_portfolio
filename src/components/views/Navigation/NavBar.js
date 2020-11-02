@@ -4,10 +4,10 @@ import { NavLink } from 'react-router-dom';
 
 function NavBar({ navLinks }) {
   return (
-    <nav>
+    <nav className='Navigation'>
       {navLinks.map((link) => {
         return (
-          <NavLink key={link.id} to={link.to}>
+          <NavLink key={link.id} to={link.to} className={link.className}>
             {link.name}
           </NavLink>
         );
