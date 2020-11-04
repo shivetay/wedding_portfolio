@@ -31,6 +31,11 @@ html {
   // }
 }
 
-a {
+a,
+a:link,
+a:visited,
+a:active {
   text-decoration: none;
+  cursor: pointer;
+  // color:$color-font-light;
 }

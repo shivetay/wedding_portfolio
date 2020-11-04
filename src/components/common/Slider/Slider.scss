@@ -12,7 +12,12 @@
     border: 1px solid blue;
     min-width: 100%;
     height: 100vh;
+    transition: 0.5s;
+    display: none;
   }
+}
+.active {
+  display: inline;
 }
 
 #goLeft {
@@ -21,7 +26,7 @@
   left: 0;
   transform: translateY(-50%);
   width: 100px;
-  height: 100vh;
+  height: 10vh;
 }
 
 #goRight {
@@ -30,5 +35,5 @@
   right: 0;
   transform: translateY(-50%);
   width: 100px;
-  height: 100vh;
+  height: 10vh;
 }

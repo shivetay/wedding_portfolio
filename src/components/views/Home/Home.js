@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 
-import Slider from '../../common/Slider/Slider';
+// import Slider from '../../common/Slider/Slider';
 
 class Home extends Component {
   render() {
-    return (
-      <div>
-        <Slider />
-      </div>
-    );
+    return <div>{/* <Slider /> */}</div>;
   }
 }
 
