@@ -16,12 +16,18 @@ class Navigation extends Component {
       },
       {
         id: 3,
+        name: 'Oferta',
+        to: '/offer',
+        className: 'Navigation__Nav-link',
+      },
+      {
+        id: 4,
         name: 'Inspiracje',
         to: '/inpiration',
         className: 'Navigation__Nav-link',
       },
       {
-        id: 4,
+        id: 5,
         name: 'Kontakt',
         to: '/contact',
         className: 'Navigation__Nav-link',
