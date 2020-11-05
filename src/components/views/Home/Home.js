@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
+import Slider from '../../common/Slider/Slider';
 
-// import Slider from '../../common/Slider/Slider';
+import React from 'react';
 
-class Home extends Component {
-  render() {
-    return <div>{/* <Slider /> */}</div>;
-  }
-}
+const Home = () => {
+  return (
+    <section>
+      <Slider />
+    </section>
+  );
+};
 
 export default Home;
