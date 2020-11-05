@@ -30,3 +30,12 @@ html {
   //   font-size: 37%; // 1rem = 6px
   // }
 }
+
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  cursor: pointer;
+  // color:$color-font-light;
+}

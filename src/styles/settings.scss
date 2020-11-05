@@ -1,18 +1,22 @@
 /* colors */
-$color-main: rgb(247, 239, 239);
-$color-bacground: #000000;
-$color-second: #f2f3ee;
+$color-main: #fffcf8;
+$color-bacground: #fffcf8;
+$color-second: #54432d;
+$color-second-opa: #fffcf8da;
 $color-dark: #1c2439;
 $color-light: #f2f3ee;
 
-// $color-contrast: #e4940e;
-// $color-contrast-second: #efc344;
-// $color-white: #f2f3ee;
+// $color-contrast: #b9d8cb;
+// $color-contrast-second: #61a48a;
+// $color-white: #c29e5b;
+// $color-white: #54432d;
+// $color-white: #c29e5b;
 
 $color-font-dark: #1c2439;
-$color-font-main: #f2f3ee;
-// $color-font-contrast: #efc344;
-// $color-font-contrast-second: #e4940e;
+$color-font-main: #54432d;
+$color-font-light: #fffcf8;
+$color-font-contrast: #8dbfab;
+// $color-font-contrast-second: #c29e5b;
 
 $active-link: #e4940e;
 $hover-link: #efc344;
