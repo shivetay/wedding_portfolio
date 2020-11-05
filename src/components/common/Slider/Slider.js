@@ -61,7 +61,13 @@ function Slider() {
             className={`Slider__Slide` + (item.id - 1 === x ? ' active' : '')}
             key={item.id}
             style={{ transform: `translateX(${x}%)` }}>
-            <SliderImage src={item.src} text={item.text} alt={item.alt} />
+            <SliderImage
+              classTxt={'Slider__Slide-txt'}
+              classImg={'Slider__Slide-img'}
+              src={item.src}
+              text={item.text}
+              alt={item.alt}
+            />
           </div>
         );
       })}
