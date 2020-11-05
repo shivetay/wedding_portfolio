@@ -2,8 +2,47 @@ import React, { useState } from 'react';
 
 import './Slider.scss';
 
+import SliderImage from './SliderImage';
+
+import photo1 from '../../../Images/photo1.jpg';
+import photo2 from '../../../Images/photo2.jpg';
+import photo3 from '../../../Images/photo3.jpg';
+import photo4 from '../../../Images/photo4.jpg';
+import photo5 from '../../../Images/photo5.jpg';
+
 function Slider() {
-  let slideArr = [1, 2, 3, 4, 5];
+  let slideArr = [
+    {
+      id: 1,
+      src: photo1,
+      text: 'Far far away, behind the word mountains',
+      alt: 'wedding_photo',
+    },
+    {
+      id: 2,
+      src: photo2,
+      text: 'Far far away, behind the word mountains',
+      alt: 'wedding_photo',
+    },
+    {
+      id: 3,
+      src: photo3,
+      text: 'Far far away, behind the word mountains',
+      alt: 'wedding_photo',
+    },
+    {
+      id: 4,
+      src: photo4,
+      text: 'Far far away, behind the word mountains',
+      alt: 'wedding_photo',
+    },
+    {
+      id: 5,
+      src: photo5,
+      text: 'Far far away, behind the word mountains',
+      alt: 'wedding_photo',
+    },
+  ];
   const [x, setX] = useState(0);
   const goLeft = () => {
     console.log(x);
@@ -16,13 +55,13 @@ function Slider() {
 
   return (
     <div className='Slider'>
-      {slideArr.map((item, index) => {
+      {slideArr.map((item) => {
         return (
           <div
-            className={`Slider__Slide` + (index - 1 === x ? ' active' : '')}
-            key={index}
+            className={`Slider__Slide` + (item.id - 1 === x ? ' active' : '')}
+            key={item.id}
             style={{ transform: `translateX(${x}%)` }}>
-            {item}
+            <SliderImage src={item.src} text={item.text} alt={item.alt} />
           </div>
         );
       })}
