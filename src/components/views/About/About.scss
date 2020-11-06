@@ -1,0 +1,23 @@
+@import '../../../styles/settings.scss';
+@import '../../../styles/mixins.scss';
+
+.About {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  border: 1px solid red;
+  &__Container {
+    display: flex;
+    align-self: center;
+    border: 1px solid red;
+    width: 80rem;
+    height: 50rem;
+  }
+  &__Photo {
+    &-img {
+      width: 50rem;
+      height: 30rem;
+    }
+  }
+}
