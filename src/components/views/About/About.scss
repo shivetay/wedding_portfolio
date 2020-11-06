@@ -8,11 +8,20 @@
   height: 100vh;
   border: 1px solid red;
   &__Container {
-    display: flex;
-    align-self: center;
     border: 1px solid red;
-    width: 80rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100rem;
     height: 50rem;
+  }
+  &__Content {
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 95%;
   }
   &__Photo {
     &-img {
