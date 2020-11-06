@@ -5,7 +5,7 @@ const SliderImage = ({ src, alt, text, classImg, classTxt }) => {
   return (
     <Fragment>
       <img className={classImg} src={src} alt={alt} />;
-      {/* <h2 className={classTxt}>{text}</h2> */}
+      <h2 className={classTxt}>{text}</h2>
     </Fragment>
   );
 };
