@@ -8,6 +8,20 @@
     display: flex;
     justify-content: space-between;
     flex: 1;
+    // background-color: $color-dark-opa;
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      height: 30rem;
+      width: 50rem;
+      background-color: $color-third-opa;
+      box-shadow: 0 0 5px 3px $color-dark-opa;
+      border-radius: 10px;
+    }
   }
   &-img {
     width: 50%;

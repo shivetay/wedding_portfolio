@@ -37,6 +37,7 @@ h2 {
   font-size: $header-h2;
 }
 
+/* links */
 a,
 a:link,
 a:visited,
@@ -46,7 +47,12 @@ a:active {
   // color:$color-font-light;
 }
 
+/* paragraph */
 p {
   font-size: $font-normal;
   text-align: justify;
+}
+
+/* buttons */
+.btn {
 }
