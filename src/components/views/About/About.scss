@@ -1,0 +1,49 @@
+@import '../../../styles/settings.scss';
+@import '../../../styles/mixins.scss';
+
+.About {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  &__Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100rem;
+    height: 58rem;
+  }
+  &__Content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 95%;
+  }
+  &__Photo {
+    margin-top: 6rem;
+
+    &-img {
+      position: relative;
+      border-radius: 5px;
+      width: 100%;
+      opacity: 0.8;
+      background-color: whitesmoke;
+      box-shadow: 0 10px 6px -6px $color-dark-opa;
+    }
+  }
+  &__Text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-font-light;
+    display: inline-block;
+    &-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+}

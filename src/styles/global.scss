@@ -19,6 +19,7 @@ body {
 html {
   /* 1rem = 10px; 16px - base font size  10px/16px = 62.5% */
   font-size: 62.5%;
+  background-color: $color-bacground;
   // color: $color-font-main;
   // @include respond(desktop-small) {
   //   font-size: 50%; // 1rem = 8px
@@ -31,6 +32,11 @@ html {
   // }
 }
 
+/* headers */
+h2 {
+  font-size: $header-h2;
+}
+
 a,
 a:link,
 a:visited,
@@ -38,4 +44,9 @@ a:active {
   text-decoration: none;
   cursor: pointer;
   // color:$color-font-light;
+}
+
+p {
+  font-size: $font-normal;
+  text-align: justify;
 }
