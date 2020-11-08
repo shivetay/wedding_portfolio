@@ -1,2 +1,15 @@
 @import '../../../styles/settings.scss';
 @import '../../../styles/mixins.scss';
+
+.Offer {
+  position: relative;
+  top: 6rem;
+  &__Content {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+  }
+  &-img {
+    width: 50%;
+  }
+}

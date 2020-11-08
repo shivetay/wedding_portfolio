@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import MainLayout from '../src/components/layout/MainLayout/MainLayout';
 import About from './components/views/About/About';
 import Home from './components/views/Home/Home';
-import Offer from './components/views/Offer';
+import Offer from './components/views/Offer/Offer';
 
 function App() {
   return (
