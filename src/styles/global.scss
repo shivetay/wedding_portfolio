@@ -36,6 +36,9 @@ html {
 h2 {
   font-size: $header-h2;
 }
+h3 {
+  font-size: $header-h3;
+}
 
 /* links */
 a,
@@ -55,4 +58,12 @@ p {
 
 /* buttons */
 .btn {
+  font-size: $font-medium;
+  font-weight: 700;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  padding: 1.6rem 2.4rem;
+  outline: none;
+  cursor: pointer;
 }

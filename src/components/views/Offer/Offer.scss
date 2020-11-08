@@ -27,3 +27,29 @@
     width: 50%;
   }
 }
+
+.btn-offer {
+  transition: cubic-bezier(0.68, 0.53, 0, 1) 0.5s;
+}
+
+.btn-offer:hover {
+  background-color: $color-bacground;
+  color: $color-font-dark;
+  transform: translateY(-3px);
+}
+.btn-offer:active {
+  transform: translateY(1px);
+}
+
+h3,
+p {
+  color: $color-font-light;
+}
+h3,
+p {
+  margin-bottom: 2rem;
+}
+p {
+  padding: 0 2rem;
+  letter-spacing: 1px;
+}

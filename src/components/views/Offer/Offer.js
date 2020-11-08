@@ -13,14 +13,19 @@ const Offer = () => {
             alt='offer_photo'
           />
           <div className='Offer__Content-text'>
-            <p>Lorem</p>
-            <button className='btn'>Więcej</button>
+            <h3>Tadeusz</h3>
+            <p>
+              Wreszcie po całym domu dawne obyczaje swe rodzinne duszę
+              utęsknioną
+            </p>
+            <button className='btn btn-offer'>Więcej</button>
           </div>
         </div>
         <div className='Offer__Content'>
           <div className='Offer__Content-text'>
-            <p>Lorem</p>
-            <button className='btn'>Więcej</button>
+            <h3>Krzyczano</h3>
+            <p> Bo nie był ruchawy od płaczącej matki pod lasem zwaliska.</p>
+            <button className='btn btn-offer'>Więcej</button>
           </div>
           <img
             className='Offer-img'
@@ -35,8 +40,9 @@ const Offer = () => {
             alt='offer_photo'
           />
           <div className='Offer__Content-text'>
-            <p>Lorem</p>
-            <button className='btn'>Więcej</button>
+            <h3>Litwę muram</h3>
+            <p>Dano trzecią potrawę.</p>
+            <button className='btn btn-offer'>Więcej</button>
           </div>
         </div>
       </div>
