@@ -32,6 +32,11 @@ html {
   // }
 }
 
+/* headers */
+h2 {
+  font-size: $header-h2;
+}
+
 a,
 a:link,
 a:visited,
@@ -39,4 +44,9 @@ a:active {
   text-decoration: none;
   cursor: pointer;
   // color:$color-font-light;
+}
+
+p {
+  font-size: $font-normal;
+  text-align: justify;
 }
