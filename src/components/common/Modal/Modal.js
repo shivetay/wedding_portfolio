@@ -3,7 +3,14 @@ import PropTypes from 'prop-types';
 
 import './Modal.scss';
 
-const Modal = ({ show, close, modalHeader, modalText, modalId }) => {
+const Modal = ({
+  show,
+  close,
+  modalHeader,
+  modalText,
+  modalId,
+  classModal,
+}) => {
   return (
     <div
       className='Modal__Container'
@@ -13,7 +20,9 @@ const Modal = ({ show, close, modalHeader, modalText, modalId }) => {
       <div key={modalId} className='Modal__Content'>
         <h2>{modalHeader}</h2>
         <p>{modalText}</p>
-        <button onClick={close}>Zamknij</button>
+        <button className={`btn ${classModal}`} onClick={close}>
+          Zamknij
+        </button>
       </div>
       {console.log(modalId)}
     </div>
@@ -24,6 +33,7 @@ Modal.propTypes = {
   modalHeader: PropTypes.string.isRequired,
   modalText: PropTypes.string.isRequired,
   modalId: PropTypes.number.isRequired,
+  classModal: PropTypes.string,
   show: PropTypes.bool,
   close: PropTypes.func,
 };

@@ -16,7 +16,7 @@ class Offer extends Component {
         offerHeader: 'Tadeusz',
         modalText:
           'modal text here lorem Widać, że nam się sprawa. My od siebie czuł choroby zaród. Krzyczano na Lombardzkiem polu. Jak mnie polityka nudzi. jeżeli z nim się kołem. W zamku sień wielka, jeszcze z jutrzenką napotka się jako po kryjomu kazał stoły.',
-        modaleHeader: 'Sędzia, a Sędziego',
+        modalHeader: 'Sędzia, a Sędziego',
       },
       {
         id: 2,
@@ -27,7 +27,7 @@ class Offer extends Component {
         offerHeader: 'ogrodowych grządek',
         modalText:
           'Ostrej świecisz Bramie! Ty, co porabiał? Każdy, gdzie panieńskim rumieńcem dzięcielina pała a wzdycha do sieni siadł przy boku miał, w naukach postąpił choć najwymowniejsza. Ale co o czyjeś kolana pośliznęła się krzywi i jak znawcy,',
-        modaleHeader: ' zamkowej sieni siadł',
+        modalHeader: ' zamkowej sieni siadł',
       },
       {
         id: 3,
@@ -37,7 +37,7 @@ class Offer extends Component {
         offerHeader: 'Bo nie był to mówiąc',
         modalText:
           'grabliska suwane po francusku. Biegali wszyscy słuchali w ziemstwie i stoi wypisany każdy mimowolnie porządku i zabawiać lubił od baśni historyje gadał. On za dowód dobroci?',
-        modaleHeader: 'Wtem pan Sędzia',
+        modalHeader: 'Wtem pan Sędzia',
       },
     ],
     showModal: 0,
@@ -65,6 +65,7 @@ class Offer extends Component {
                 </button>
               </div>
               <Modal
+                classModal={'btn-offer'}
                 modalId={item.id}
                 modalHeader={item.modalHeader}
                 modalText={item.modalText}
