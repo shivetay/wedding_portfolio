@@ -1,0 +1,12 @@
+@import '../../../styles/settings.scss';
+@import '../../../styles/mixins.scss';
+
+.Modal {
+  &__Container {
+    background-color: #fff;
+    width: 80%;
+    max-width: 80rem;
+    margin: 4rem auto;
+    z-index: 999;
+  }
+}
