@@ -35,6 +35,7 @@ html {
 /* headers */
 h2 {
   font-size: $header-h2;
+  margin-bottom: 4rem;
 }
 h3 {
   font-size: $header-h3;
@@ -66,4 +67,17 @@ p {
   padding: 1.6rem 2.4rem;
   outline: none;
   cursor: pointer;
+}
+
+.btn-offer {
+  transition: cubic-bezier(0.68, 0.53, 0, 1) 0.5s;
+}
+
+.btn-offer:hover {
+  background-color: $color-bacground;
+  color: $color-font-dark;
+  transform: translateY(-3px);
+}
+.btn-offer:active {
+  transform: translateY(1px);
 }

@@ -8,7 +8,6 @@
     display: flex;
     justify-content: space-between;
     flex: 1;
-    // background-color: $color-dark-opa;
 
     &-text {
       display: flex;
@@ -22,6 +21,12 @@
       box-shadow: 0 0 5px 3px $color-dark-opa;
       border-radius: 10px;
     }
+  }
+  &__Content:nth-child(even) {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    flex-direction: row-reverse;
   }
   &-img {
     width: 50%;
