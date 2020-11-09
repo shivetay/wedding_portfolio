@@ -21,12 +21,11 @@ const Modal = ({ show, close, modalHeader, modalText, modalId }) => {
 };
 
 Modal.propTypes = {
-  modalHeader: PropTypes.string,
-  modalText: PropTypes.string,
-  modalId: PropTypes.number,
+  modalHeader: PropTypes.string.isRequired,
+  modalText: PropTypes.string.isRequired,
+  modalId: PropTypes.number.isRequired,
   show: PropTypes.bool,
   close: PropTypes.func,
-  // item: PropTypes.any,
 };
 
 export default Modal;
