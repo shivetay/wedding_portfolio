@@ -1,0 +1,46 @@
+@import '../../../styles/settings.scss';
+@import '../../../styles/mixins.scss';
+
+.Form {
+  &--name,
+  &--email,
+  &--subject {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 2px;
+    border: none;
+    color: inherit;
+    font-size: 15px;
+    transition: all 0.3s;
+  }
+  &--group {
+    padding: 10px;
+  }
+  &--text {
+    width: 100%;
+    height: 65%;
+    border-radius: 2px;
+    border: none;
+    color: inherit;
+    font-size: 15px;
+    padding: 10px 25px;
+  }
+  &:focus {
+    outline: none;
+  }
+  &--label {
+    font-size: 12px;
+    font-family: $font-text;
+    font-weight: 700;
+    margin-left: 3px;
+    transition: all 0.3s;
+  }
+
+  &--email:placeholder-shown + &--label,
+  &--name:placeholder-shown + &--label,
+  &--subject:placeholder-shown + &--label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(12rem);
+  }
+}

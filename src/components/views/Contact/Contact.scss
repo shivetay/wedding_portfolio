@@ -1,0 +1,30 @@
+@import '../../../styles/settings.scss';
+@import '../../../styles/mixins.scss';
+
+.Contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: $color-main;
+  height: 100vh;
+
+  &__Container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 2rem;
+  }
+  &__Header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__Content {
+    background-color: $color-dark-opa;
+    border-radius: 5px;
+    padding: 2rem;
+  }
+  &-img {
+    width: 80%;
+  }
+}
