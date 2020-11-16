@@ -9,14 +9,12 @@ import logo from '../../../Images/logo_bez tła[12398].png';
 import './Contact.scss';
 
 import Footer from '../../layout/Footer/Footer';
+import Form from '../../common/Form/Form';
 
 const Contact = () => {
   return (
     <section className='Contact'>
       <div className='Contact__Container'>
-        <div className='Contact__Header'>
-          <img className='Contact-img' src={logo} alt='logo_Bohho' />
-        </div>
         <div className='Contact__Content'>
           <h3>Bohho - organizacja ślubów i imprez</h3>
           <p>Wrocław</p>
@@ -42,6 +40,10 @@ const Contact = () => {
             </a>
           </div>
         </div>
+        <div className='Contact__Header'>
+          <img className='Contact-img' src={logo} alt='logo_Bohho' />
+        </div>
+        {/* <Form /> */}
       </div>
       <Footer />
     </section>
