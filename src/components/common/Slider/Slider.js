@@ -138,6 +138,12 @@ class Slider extends Component {
     activeImage: 0,
   };
 
+  componentDidMount() {
+    setInterval(() => {
+      this.goRight();
+    }, 8000);
+  }
+
   goLeft = (value, e) => {
     e.preventDefault();
     const { activeImage, sliderArr } = this.state;
@@ -147,12 +153,9 @@ class Slider extends Component {
     } else {
       this.setState({ activeImage: 0 });
     }
-
-    console.log(value);
-    console.log(this.state.activeImage);
   };
+
   goRight = (value, e) => {
-    e.preventDefault();
     const { activeImage, sliderArr } = this.state;
     let i = activeImage;
     if (i >= 0 && i < sliderArr.length - 1) {
@@ -160,8 +163,6 @@ class Slider extends Component {
     } else {
       this.setState({ activeImage: 0 });
     }
-    console.log(value);
-    console.log(this.state.activeImage);
   };
 
   renderImages = () => {
@@ -170,28 +171,20 @@ class Slider extends Component {
       <div className='Slider'>
         {sliderArr.map((item) => {
           return (
-            <Fragment key={item.id}>
-              <div
-                className={`Slider__Slide ${
-                  activeImage === item.id - 1 ? 'active' : ''
-                }`}
-                key={item.id}
-                style={{ transform: `translateX(${activeImage}%)` }}>
-                <SliderImage
-                  classTxt={'Slider__Slide-txt'}
-                  classImg={'Slider__Slide-img'}
-                  src={item.src}
-                  text={item.text}
-                  alt={item.alt}
-                />
-              </div>
-              <button id='goLeft' onClick={(e) => this.goLeft(item.id, e)}>
-                left
-              </button>
-              <button id='goRight' onClick={(e) => this.goRight(item.id, e)}>
-                right
-              </button>
-            </Fragment>
+            <div
+              className={`Slider__Slide ${
+                activeImage === item.id - 1 ? 'active' : ''
+              }`}
+              key={item.id}
+              style={{ transform: `translateX(${activeImage}%)` }}>
+              <SliderImage
+                classTxt={'Slider__Slide-txt'}
+                classImg={'Slider__Slide-img'}
+                src={item.src}
+                text={item.text}
+                alt={item.alt}
+              />
+            </div>
           );
         })}
       </div>
