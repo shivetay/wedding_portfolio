@@ -1,6 +1,6 @@
-import Slider from '../../common/Slider/Slider';
-
 import React from 'react';
+
+import Slider from '../../common/Slider/Slider';
 
 const Home = () => {
   return (

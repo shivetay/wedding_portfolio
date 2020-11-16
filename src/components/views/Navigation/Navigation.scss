@@ -6,16 +6,17 @@
   justify-content: flex-end;
   align-items: center;
 
-  font-size: $font-medium;
+  font-size: $font-normal;
   font-family: $font-family;
   font-weight: 600;
+  margin-right: 20rem;
 
   &__Nav-link {
     padding: 2rem;
-    color: $color-font-main;
+    color: $color-font-dark;
     transition: 0.5s;
   }
   &__Nav-link:hover {
-    color: $color-font-dark;
+    color: $color-font-hover;
   }
 }
