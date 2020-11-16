@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import './Slider.scss';
 
@@ -44,12 +44,15 @@ function Slider() {
     },
   ];
   const [x, setX] = useState(0);
+  useEffect(() => {
+    setInterval(() => {
+      goLeft();
+    }, 8000);
+  });
   const goLeft = () => {
-    console.log(x);
     x === 0 ? setX(-100 * (slideArr.length - 1)) : setX(x + 100);
   };
   const goRight = () => {
-    console.log(x);
     x === -100 * (slideArr.length - 1) ? setX(0) : setX(x - 100);
   };
 
@@ -58,7 +61,7 @@ function Slider() {
       {slideArr.map((item) => {
         return (
           <div
-            className={`Slider__Slide` + (item.id - 1 === x ? ' active' : '')}
+            className={`Slider__Slide + ${item.id - 1 === x ? 'active' : ''}`}
             key={item.id}
             style={{ transform: `translateX(${x}%)` }}>
             <SliderImage
