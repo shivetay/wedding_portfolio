@@ -9,7 +9,7 @@ import logo from '../../../Images/logo_bez tła[12398].png';
 import './Contact.scss';
 
 import Footer from '../../layout/Footer/Footer';
-import Form from '../../common/Form/Form';
+// import Form from '../../common/Form/Form';
 
 const Contact = () => {
   return (
