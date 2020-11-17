@@ -17,6 +17,28 @@
     transition: 0.5s;
   }
 
+  &__Mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 65%;
+    font-size: $font-normal;
+    font-family: $font-family;
+    font-weight: 600;
+
+    & .Navigation__Nav-link {
+      color: $color-font-light;
+      @include respond(tab-port) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    & ul {
+      display: block;
+    }
+  }
+
   @include respond(tab-port) {
     display: none;
   }
@@ -47,4 +69,8 @@ span {
   width: 3rem;
   height: 2.5px;
   background: $color-font-dark;
+}
+
+.active {
+  color: $color-font-contrast;
 }

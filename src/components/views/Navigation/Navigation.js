@@ -3,7 +3,9 @@ import React, { Component, Fragment } from 'react';
 import './Navigation.scss';
 
 import NavBar from './NavBar';
-// import MobileNav from './MobileNav';
+import SideDrawer from './SideDrawer';
+import MobileNav from './MobileNav';
+import BackDrop from '../../common/BackDrop/BackDrop';
 
 class Navigation extends Component {
   state = {
@@ -29,18 +31,28 @@ class Navigation extends Component {
         className: 'Navigation__Nav-link',
       },
     ],
+    isOpen: false,
+  };
+  openDrawer = () => {
+    this.setState({ isOpen: true });
+  };
+  closeDrawer = () => {
+    this.setState({ isOpen: false });
   };
   render() {
-    const { navItems } = this.state;
+    const { navItems, isOpen } = this.state;
     return (
       <Fragment>
         <NavBar navLinks={navItems} />
-        <button className='Navigation-btn'>
+        <button onClick={this.openDrawer} className='Navigation-btn'>
           <span />
           <span />
           <span />
         </button>
-        {/* <MobileNav navLinks={navItems} /> */}
+        {isOpen && <BackDrop onClick={this.closeDrawer} />}
+        <SideDrawer onClick={this.closeDrawer} show={isOpen}>
+          <MobileNav navLinks={navItems} />
+        </SideDrawer>
       </Fragment>
     );
   }
