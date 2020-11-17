@@ -1,10 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-function NavBar({ navLinks }) {
+function MobileNav({ navLinks }) {
   return (
-    <nav className='Navigation'>
+    <nav className='Navigation__Mobile'>
       <ul>
         {navLinks.map((link) => {
           return (
@@ -24,8 +24,8 @@ function NavBar({ navLinks }) {
   );
 }
 
-NavBar.propTypes = {
-  navLinks: PropTypes.array,
+MobileNav.propTypes = {
+  navLinks: PropTypes.array.isRequired,
 };
 
-export default NavBar;
+export default MobileNav;

@@ -4,11 +4,11 @@
 .Header {
   position: fixed;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
-  height: 6rem;
-  background-color: $color-second-opa;
+  height: 8rem;
+  background-color: $color-main-opa;
   box-shadow: 0 6px 6px -3px $color-dark-opa;
 
-  z-index: 998;
+  z-index: 900;
 }

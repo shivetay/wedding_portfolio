@@ -51,6 +51,14 @@ a:active {
   // color:$color-font-light;
 }
 
+/* lists */
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* paragraph */
 p {
   font-size: $font-normal;
