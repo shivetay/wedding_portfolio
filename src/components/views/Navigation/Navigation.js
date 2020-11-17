@@ -3,6 +3,7 @@ import React, { Component, Fragment } from 'react';
 import './Navigation.scss';
 
 import NavBar from './NavBar';
+// import MobileNav from './MobileNav';
 
 class Navigation extends Component {
   state = {
@@ -34,6 +35,12 @@ class Navigation extends Component {
     return (
       <Fragment>
         <NavBar navLinks={navItems} />
+        <button className='Navigation-btn'>
+          <span />
+          <span />
+          <span />
+        </button>
+        {/* <MobileNav navLinks={navItems} /> */}
       </Fragment>
     );
   }
