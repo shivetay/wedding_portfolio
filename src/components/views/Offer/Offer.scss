@@ -3,11 +3,17 @@
 
 .Offer {
   position: relative;
-  top: 6rem;
+  display: flex;
+  flex-direction: column;
+  top: 8rem;
+  z-index: 50;
+
   &__Content {
+    position: relative;
     display: flex;
     justify-content: space-between;
     flex: 1;
+    z-index: 50;
 
     &-text {
       display: flex;
@@ -17,9 +23,38 @@
       margin: auto;
       height: 30rem;
       width: 50rem;
-      background-color: $color-third-opa;
+      background-color: $color-third;
       box-shadow: 0 0 5px 3px $color-dark-opa;
       border-radius: 10px;
+      z-index: 50;
+
+      @include respond(tab-port) {
+        // flex-direction: column;
+        // flex-wrap: nowrap;
+        // flex: 1;
+        margin: 1rem auto;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: 25%;
+      content: '';
+      background-color: $color-card;
+      width: 100%;
+      height: 50%;
+      z-index: 10;
+      opacity: 0.6;
+
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      flex: 1;
     }
   }
   &__Content:nth-child(even) {
@@ -27,9 +62,20 @@
     justify-content: space-between;
     flex: 1;
     flex-direction: row-reverse;
+    z-index: 50;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
   }
   &-img {
     width: 50%;
+    z-index: 50;
+
+    @include respond(tab-port) {
+      width: 100%;
+      z-index: 50;
+    }
   }
 }
 

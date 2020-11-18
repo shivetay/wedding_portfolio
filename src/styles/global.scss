@@ -69,20 +69,21 @@ p {
 .btn {
   font-size: $font-medium;
   font-weight: 700;
-  background: none;
+  background: $color-btutton-opa;
   border: none;
   border-radius: 5px;
   padding: 1.6rem 2.4rem;
   outline: none;
   cursor: pointer;
+  color: $color-font-light;
 }
 
 .btn-offer {
-  transition: cubic-bezier(0.68, 0.53, 0, 1) 0.5s;
+  transition: 0.5s;
 }
 
 .btn-offer:hover {
-  background-color: $color-bacground;
+  background-color: $color-button-second;
   color: $color-font-dark;
   transform: translateY(-3px);
 }
