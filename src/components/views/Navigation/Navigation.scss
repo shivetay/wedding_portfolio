@@ -17,13 +17,27 @@
     transition: 0.5s;
   }
 
+  &__Icons {
+    display: flex;
+    flex-direction: column;
+
+    & a {
+      padding: 4px;
+      color: $color-font-dark;
+      transition: 0.5s;
+    }
+    & a:hover {
+      color: $color-font-hover;
+    }
+  }
+
   &__Mobile {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     height: 65%;
-    font-size: $font-normal;
+    font-size: $font-big;
     font-family: $font-family;
     font-weight: 600;
 
@@ -36,6 +50,13 @@
     }
     & ul {
       display: block;
+    }
+    &-icons {
+      display: flex;
+      & a {
+        padding: 4px;
+        color: $color-font-light;
+      }
     }
   }
 

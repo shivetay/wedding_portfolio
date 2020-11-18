@@ -2,6 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
 function NavBar({ navLinks }) {
   return (
     <nav className='Navigation'>
@@ -20,6 +23,20 @@ function NavBar({ navLinks }) {
           );
         })}
       </ul>
+      <div className='Navigation__Icons'>
+        <a
+          target='_blank'
+          rel='noopener noreferrer'
+          href='https://www.facebook.com/bohho.sluby.imprezy'>
+          <FontAwesomeIcon icon={faFacebook} />
+        </a>
+        <a
+          target='_blank'
+          rel='noopener noreferrer'
+          href='https://www.instagram.com/bohho_sluby_imprezy/'>
+          <FontAwesomeIcon icon={faInstagram} />
+        </a>
+      </div>
     </nav>
   );
 }

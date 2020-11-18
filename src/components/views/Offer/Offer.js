@@ -40,7 +40,7 @@ class Offer extends Component {
         modalHeader: 'Wtem pan Sędzia',
       },
     ],
-    showModal: 0,
+    showModal: false,
   };
 
   renderElements = () => {
@@ -64,12 +64,13 @@ class Offer extends Component {
                   Więcej
                 </button>
               </div>
+
               <Modal
+                show={showModal === item.id}
                 classModal={'btn-offer'}
                 modalId={item.id}
                 modalHeader={item.modalHeader}
                 modalText={item.modalText}
-                show={showModal === item.id}
                 close={() => this.closeModal()}
               />
             </div>
@@ -81,10 +82,9 @@ class Offer extends Component {
 
   openModal = (value) => {
     this.setState({ showModal: value });
-    console.log('modal');
   };
   closeModal = () => {
-    this.setState({ showModal: 0 });
+    this.setState({ showModal: false });
   };
   render() {
     return <section className='Offer'>{this.renderElements()}</section>;
