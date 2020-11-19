@@ -1,0 +1,23 @@
+@import '../../../styles/settings.scss';
+@import '../../../styles/mixins.scss';
+
+.Footer {
+  background-color: $color-second-opa;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  height: 3rem;
+  & p {
+    font-size: $font-small;
+    text-align: right;
+    margin-top: 1rem;
+
+    & a {
+      color: inherit;
+      transition: all 0.2s;
+    }
+    & a:hover {
+      color: $color-third;
+    }
+  }
+}

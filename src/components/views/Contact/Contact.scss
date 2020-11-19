@@ -14,17 +14,62 @@
     justify-content: space-between;
     flex-direction: row;
     padding: 2rem;
+    margin-top: 6rem;
+
+    @include respond(tab-port) {
+      flex-direction: column-reverse;
+    }
   }
   &__Header {
     display: flex;
     justify-content: flex-end;
+
+    @include respond(tab-port) {
+      margin-top: 16rem;
+      justify-content: center;
+      align-items: center;
+    }
+    @include respond(xsmall) {
+      margin: 0;
+    }
   }
   &__Content {
-    background-color: $color-dark-opa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-third-opa;
     border-radius: 5px;
+    box-shadow: 0 6px 6px -3px $color-dark-opa;
     padding: 2rem;
+    font-size: $font-normal;
+    &-photo {
+      width: 20%;
+      margin: 2rem 0;
+    }
+    &-icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & a {
+        font-size: $font-normal;
+        padding: 4px;
+        color: $color-font-light;
+        transition: all 0.2s;
+      }
+      & a:hover {
+        color: $hover-link;
+      }
+    }
   }
   &-img {
     width: 80%;
+
+    @include respond(tab-port) {
+      width: 50%;
+    }
   }
+}
+.icon {
+  color: $hover-link;
 }
