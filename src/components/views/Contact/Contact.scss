@@ -3,7 +3,7 @@
 
 .Contact {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   background: $color-main;
@@ -41,7 +41,6 @@
     background-color: $color-third-opa;
     border-radius: 5px;
     box-shadow: 0 6px 6px -3px $color-dark-opa;
-    padding: 2rem;
     font-size: $font-normal;
     &-photo {
       width: 20%;
@@ -63,7 +62,7 @@
     }
   }
   &-img {
-    width: 80%;
+    width: 100%;
 
     @include respond(tab-port) {
       width: 50%;
