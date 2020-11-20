@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 import './Slider.scss';
 
@@ -100,7 +100,7 @@ class Slider extends Component {
   };
 
   render() {
-    return <div>{this.renderImages()}</div>;
+    return <Fragment>{this.renderImages()}</Fragment>;
   }
 }
 

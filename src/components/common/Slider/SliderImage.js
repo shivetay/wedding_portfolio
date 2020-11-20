@@ -5,13 +5,16 @@ const SliderImage = ({ src, alt, classImg, classTxt, classDeco, deco }) => {
   return (
     <Fragment>
       <img className={classImg} src={src} alt={alt} />
-      <div>
-        <img src={deco} alt='decoration element' />
+      <div className='Container'>
+        <div className='Container-img'>
+          <img className={classDeco} src={deco} alt='decoration element' />
+        </div>
+
         <p className={classTxt}>
           Organizuję kompleksowo śluby, imprezy, uroczystości rodzinne oraz
-          przyjęcia. Zapraszam do zapoznania sie z ofertą i do kontaktu
+          przyjęcia. Zapraszam do zapoznania sie z ofertą i do kontaktu.
+          <p className='span'>Dorota</p>
         </p>
-        <span>Dorota</span>
       </div>
     </Fragment>
   );
