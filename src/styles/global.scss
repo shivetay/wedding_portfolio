@@ -21,6 +21,8 @@ html {
   font-size: 62.5%;
   background-color: $color-bacground;
 
+  scroll-behavior: smooth;
+
   @include respond(desktop-small) {
     font-size: 50%; // 1rem = 8px
   }

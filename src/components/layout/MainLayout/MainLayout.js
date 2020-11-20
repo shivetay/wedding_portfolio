@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
 import Header from '../Header/Header';
 
 const MainLayout = ({ children }) => {
   return (
-    <section>
+    <Fragment>
       <Header />
       <main>{children}</main>
-    </section>
+    </Fragment>
   );
 };
 
