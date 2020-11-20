@@ -23,7 +23,7 @@ const ModalOverlay = ({
       }}>
       <div key={modalId} className={`Modal__Content ${className}`}>
         <h2>{modalHeader}</h2>
-        <p>{modalText}</p>
+        <div>{modalText}</div>
         <button className={`btn ${classModal}`} onClick={close}>
           Zamknij
         </button>

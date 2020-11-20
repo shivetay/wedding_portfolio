@@ -2,80 +2,46 @@
 @import '../../../styles/mixins.scss';
 
 .Offer {
-  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  top: 8rem;
-  z-index: 50;
+  align-items: center;
+  justify-content: center;
+  // background-image: url('../../../Images/22.JPG');
+
+  &__Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
 
   &__Content {
-    position: relative;
     display: flex;
     justify-content: space-between;
-    flex: 1;
-    z-index: 50;
-
+    flex-wrap: wrap;
     &-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: auto;
-      height: 30rem;
-      width: 50rem;
-      background-color: $color-third;
-      box-shadow: 0 0 5px 3px $color-dark-opa;
-      border-radius: 10px;
-      z-index: 50;
-
-      @include respond(tab-port) {
-        // flex-direction: column;
-        // flex-wrap: nowrap;
-        // flex: 1;
-        margin: 1rem auto;
-      }
-    }
-
-    &::after {
-      position: absolute;
-      top: 25%;
-      content: '';
-      background-color: $color-card;
-      width: 100%;
-      height: 50%;
-      z-index: 10;
-      opacity: 0.6;
-
-      @include respond(tab-port) {
-        display: none;
-      }
-    }
-
-    @include respond(tab-port) {
-      flex-direction: column;
-      flex-wrap: nowrap;
       flex: 1;
-    }
-  }
-  &__Content:nth-child(even) {
-    display: flex;
-    justify-content: space-between;
-    flex: 1;
-    flex-direction: row-reverse;
-    z-index: 50;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 50px;
+      margin: 5px;
+      text-align: center;
 
-    @include respond(tab-port) {
-      flex-direction: column;
+      border: 1px solid blue;
     }
-  }
-  &-img {
-    width: 50%;
-    z-index: 50;
-
-    @include respond(tab-port) {
-      width: 100%;
-      z-index: 50;
+    &-text > * {
+      flex: 1 1 100%;
     }
+    // @include respond(tab-port) {
+    //   flex-direction: column;
+    //   flex-wrap: nowrap;
+    //   flex: 1;
+    // }
   }
 }
 
@@ -94,7 +60,7 @@
 
 h3,
 p {
-  color: $color-font-light;
+  color: $color-font-main;
 }
 h3,
 p {
