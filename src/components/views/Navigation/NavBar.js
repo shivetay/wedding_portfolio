@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-import active from '../../../Images/ciapka1.png';
+import active from '../../../Images/ciapka2.png';
 
 function NavBar({ navLinks }) {
   return (
@@ -21,7 +21,7 @@ function NavBar({ navLinks }) {
                 className={link.className}>
                 {link.name}
               </NavLink>
-              <img src={active} />
+              <img src={active} alt='img_element' />
             </li>
           );
         })}
