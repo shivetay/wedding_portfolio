@@ -33,6 +33,7 @@
       padding: 50px;
       margin: 5px;
       text-align: center;
+      transition: all 0.4s;
     }
     &-text > * {
       flex: 1 1 100%;
@@ -45,11 +46,19 @@
       transform: translate(-50%, -50%);
       width: 40%;
     }
+    &-text:hover {
+      transform: scale(1.1);
+    }
+
     // @include respond(tab-port) {
     //   flex-direction: column;
     //   flex-wrap: nowrap;
     //   flex: 1;
     // }
+    &:hover &-text:not(:hover) {
+      transform: scale(0.8);
+      opacity: 0.6;
+    }
   }
 }
 

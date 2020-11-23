@@ -56,15 +56,15 @@ class Offer extends Component {
                     src={button}
                     alt='decom_element'
                   />
-                  <Modal
-                    show={showModal === item.id}
-                    classModal={'btn-offer'}
-                    modalId={item.id}
-                    modalHeader={item.modalHeader}
-                    modalText={item.modalText}
-                    close={() => this.closeModal()}
-                  />
                 </div>
+                <Modal
+                  show={showModal === item.id}
+                  classModal={'btn-offer'}
+                  modalId={item.id}
+                  modalHeader={item.modalHeader}
+                  modalText={item.modalText}
+                  close={() => this.closeModal()}
+                />
               </Fragment>
             );
           })}
