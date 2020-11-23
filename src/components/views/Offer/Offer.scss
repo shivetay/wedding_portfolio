@@ -25,17 +25,25 @@
     justify-content: space-between;
     flex-wrap: wrap;
     &-text {
+      position: relative;
+
       flex: 1;
       display: flex;
       flex-wrap: wrap;
       padding: 50px;
       margin: 5px;
       text-align: center;
-
-      border: 1px solid blue;
     }
     &-text > * {
       flex: 1 1 100%;
+    }
+
+    &-deco {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40%;
     }
     // @include respond(tab-port) {
     //   flex-direction: column;
@@ -47,10 +55,11 @@
 
 .btn-offer {
   transition: cubic-bezier(0.68, 0.53, 0, 1) 0.5s;
+  background: none;
+  z-index: 999;
 }
 
 .btn-offer:hover {
-  background-color: $color-bacground;
   color: $color-font-dark;
   transform: translateY(-3px);
 }
