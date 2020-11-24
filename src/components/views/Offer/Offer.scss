@@ -24,6 +24,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
     &-text {
       position: relative;
 
@@ -35,6 +36,7 @@
       text-align: center;
       transition: all 0.4s;
       opacity: 1;
+      box-shadow: 0 10px 6px -6px $color-dark-opa;
     }
     &-text > * {
       flex: 1 1 100%;
