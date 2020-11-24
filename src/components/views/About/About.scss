@@ -43,6 +43,8 @@
   &__Text {
     color: $color-font-dark;
     display: inline-block;
+    box-shadow: 0 10px 6px $color-dark-opa;
+    padding: 2rem;
 
     &-header {
       text-align: center;
