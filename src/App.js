@@ -9,6 +9,7 @@ import About from './components/views/About/About';
 import Contact from './components/views/Contact/Contact';
 import Home from './components/views/Home/Home';
 import Offer from './components/views/Offer/Offer';
+import How from './components/views/How/How';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
           <Route exact path='/offer' component={Offer} />
+          <Route exact path='/contact' component={How} />
           <Route exact path='/contact' component={Contact} />
         </AnimatedSwitch>
       </MainLayout>
