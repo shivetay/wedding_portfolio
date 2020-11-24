@@ -23,7 +23,7 @@ function App() {
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
           <Route exact path='/offer' component={Offer} />
-          <Route exact path='/contact' component={How} />
+          <Route exact path='/how' component={How} />
           <Route exact path='/contact' component={Contact} />
         </AnimatedSwitch>
       </MainLayout>

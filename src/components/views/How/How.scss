@@ -1,2 +1,58 @@
 @import '../../../styles/settings.scss';
 @import '../../../styles/mixins.scss';
+
+.How {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  &__Content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &-text {
+      position: relative;
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 5rem 0;
+      margin: 0 2px;
+      text-align: center;
+      box-shadow: 0 8px 6px -6px $color-dark;
+
+      & p {
+        align-self: baseline;
+      }
+    }
+    &-deco {
+      position: absolute;
+      width: 110%;
+      top: -1%;
+      left: -5%;
+      z-index: 15;
+    }
+    &-header {
+      font-size: $header-h4;
+      color: $color-font-light;
+      margin-bottom: 10rem;
+      z-index: 20;
+    }
+
+    &-text > * {
+      flex: 1 1 100%;
+    }
+  }
+
+  &-header {
+    align-self: center;
+    color: $color-font-dark;
+    font-size: $header-h1;
+  }
+}
