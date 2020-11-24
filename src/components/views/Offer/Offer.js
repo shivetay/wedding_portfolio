@@ -45,7 +45,7 @@ class Offer extends Component {
             return (
               <Fragment key={item.id}>
                 <div className='Offer__Content-text'>
-                  <h3>{item.offerHeader}</h3>
+                  <h2 className='Offer-header'>{item.offerHeader}</h2>
                   <button
                     onClick={() => this.openModal(item.id)}
                     className='btn btn-offer'>
