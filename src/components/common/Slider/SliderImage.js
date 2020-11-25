@@ -9,7 +9,6 @@ const SliderImage = ({ src, alt, classImg, classTxt, classDeco, deco }) => {
         <div className='Container-img'>
           <img className={classDeco} src={deco} alt='decoration element' />
         </div>
-
         <p className={classTxt}>
           Organizuję kompleksowo śluby, imprezy, uroczystości rodzinne oraz
           przyjęcia. Zapraszam do zapoznania sie z ofertą i do kontaktu.

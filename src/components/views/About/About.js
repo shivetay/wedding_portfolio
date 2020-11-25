@@ -2,12 +2,13 @@ import React from 'react';
 
 import './About.scss';
 
-import about from '../../../Images/about_photo.jpg';
+import about from '../../../Images/dorcia2.png';
 
 const About = () => {
   return (
     <section className='About'>
       <div className='About__Container'>
+        <h1>O Mnie</h1>
         <div className='About__Content'>
           <div className='About__Text'>
             <div className='About__Text-container'>

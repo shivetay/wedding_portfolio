@@ -40,6 +40,7 @@ class Offer extends Component {
     const { offerItem, showModal } = this.state;
     return (
       <div className='Offer__Conatiner'>
+        <h1 className='Offer-h1'>Oferta</h1>
         <div key={offerItem.id} className='Offer__Content'>
           {offerItem.map((item) => {
             return (
@@ -80,7 +81,7 @@ class Offer extends Component {
     this.setState({ showModal: false });
   };
   render() {
-    return <section className='Offer'>{this.renderElements()}</section>;
+    return <section className='Offer visible'>{this.renderElements()}</section>;
   }
 }
 

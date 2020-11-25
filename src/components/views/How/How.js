@@ -7,9 +7,9 @@ import deco from '../../../Images/ciapka5.png';
 
 const How = () => {
   return (
-    <section className='How'>
+    <section className='How visible'>
       <div className='How__Container'>
-        <h1 className='How-header'>Jak działam</h1>
+        <h1 className='How-h1'>Jak działam</h1>
         <div className='How__Content'>
           <div className='How__Content-text'>
             <img className='How__Content-deco' src={deco} alt='deco_element' />

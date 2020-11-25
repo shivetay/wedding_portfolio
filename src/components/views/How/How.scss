@@ -1,11 +1,20 @@
 @import '../../../styles/settings.scss';
 @import '../../../styles/mixins.scss';
+@import '../../../styles/global.scss';
 
 .How {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url('../../../Images/tlo_jakdzialam.png');
+  position: relative;
+
   &__Container {
     display: flex;
     flex-direction: column;
@@ -17,6 +26,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    z-index: 99;
     &-text {
       position: relative;
       flex: 1;
@@ -25,10 +35,16 @@
       padding: 5rem 0;
       margin: 0 2px;
       text-align: center;
+      color: $color-font-light;
       box-shadow: 0 8px 6px -6px $color-dark;
+      border-radius: 15px;
 
       & p {
         align-self: baseline;
+        color: $color-font-light;
+        & a {
+          color: $color-font-light;
+        }
       }
     }
     &-deco {
@@ -50,9 +66,10 @@
     }
   }
 
-  &-header {
-    align-self: center;
-    color: $color-font-dark;
+  &-h1 {
+    color: $color-font-light;
     font-size: $header-h1;
+    text-align: center;
+    z-index: 999;
   }
 }
