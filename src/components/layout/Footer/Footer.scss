@@ -7,10 +7,12 @@
   position: fixed;
   bottom: 0;
   height: 3rem;
+  z-index: 999;
   & p {
     font-size: $font-small;
     text-align: right;
     margin-top: 1rem;
+    color: $color-font-light;
 
     & a {
       color: inherit;

@@ -1,5 +1,6 @@
 @import '../../../styles/settings.scss';
 @import '../../../styles/mixins.scss';
+@import '../../../styles/global.scss';
 
 .Contact {
   display: flex;
@@ -8,11 +9,17 @@
   flex-direction: column;
   background: $color-main;
   height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../../../Images/tlo_kontakt.png');
 
   &__Container {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    z-index: 99;
 
     @include respond(tab-port) {
       flex-direction: column-reverse;
@@ -36,9 +43,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 45rem;
+    width: 45rem;
     background-color: $color-bacground-second;
     box-shadow: 10px 0 10px $color-dark-opa;
+    border-radius: 15px;
     font-size: $font-normal;
 
     @include respond(tab-port) {

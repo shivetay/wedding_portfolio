@@ -13,10 +13,10 @@ import Footer from '../../layout/Footer/Footer';
 
 const Contact = () => {
   return (
-    <section className='Contact'>
+    <section className='Contact visible'>
       <div className='Contact__Container'>
         <div className='Contact__Content'>
-          <h3>Bohho - organizacja ślubów i imprez</h3>
+          {/* <h3>Bohho - organizacja ślubów i imprez</h3> */}
           <p>Wrocław</p>
           <p>NIP: 8992578165</p>
           <FontAwesomeIcon className='icon' icon={faPhone} />
@@ -39,9 +39,9 @@ const Contact = () => {
           </div>
           {/* <Form /> */}
         </div>
-        <div className='Contact__Header'>
+        {/* <div className='Contact__Header'>
           <img className='Contact-img' src={logo} alt='logo_Bohho' />
-        </div>
+        </div> */}
       </div>
       <Footer />
     </section>
