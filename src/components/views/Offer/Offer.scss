@@ -1,54 +1,90 @@
 @import '../../../styles/settings.scss';
+@import '../../../styles/global.scss';
 @import '../../../styles/mixins.scss';
 
 .Offer {
-  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  top: 8rem;
-  z-index: 50;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../../Images/tlo_oferta.png');
+
+  &-h1 {
+    color: $color-font-light;
+    font-size: $header-h1;
+    text-align: center;
+    z-index: 999;
+  }
+
+  &__Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
 
   &__Content {
-    position: relative;
     display: flex;
     justify-content: space-between;
-    flex: 1;
-    z-index: 50;
+    flex-wrap: wrap;
+    z-index: 100;
 
     &-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: auto;
-      height: 30rem;
-      width: 50rem;
-      background-color: $color-third;
-      box-shadow: 0 0 5px 3px $color-dark-opa;
-      border-radius: 10px;
-      z-index: 50;
+      position: relative;
 
-      @include respond(tab-port) {
-        // flex-direction: column;
-        // flex-wrap: nowrap;
-        // flex: 1;
-        margin: 1rem auto;
-      }
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 50px;
+      margin: 5px;
+      text-align: center;
+      transition: all 0.4s;
+      opacity: 1;
+      box-shadow: 0 10px 6px $color-dark-opa;
+      border-radius: 15px;
+      z-index: 100;
+    }
+    &-text > * {
+      flex: 1 1 100%;
     }
 
-    &::after {
+    &-deco {
       position: absolute;
-      top: 25%;
-      content: '';
-      background-color: $color-card;
-      width: 100%;
-      height: 50%;
-      z-index: 10;
-      opacity: 0.6;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40%;
+
+      // @include respond(desktop) {
+      //   top: 65%;
+      // }
+      @include respond(desktop-small) {
+        top: 63%;
+      }
+      @include respond(tab-land) {
+        top: 63%;
+      }
 
       @include respond(tab-port) {
-        display: none;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
+    }
+    &-text:hover {
+      transform: scale(1.1) translateX(-20px);
+    }
+    &-text:hover:first-of-type {
+      transform: scale(1.1) translateX(35px);
+    }
+    &-text:hover:last-of-type {
+      transform: scale(1.1) translateX(-35px);
     }
 
     @include respond(tab-port) {
@@ -56,45 +92,24 @@
       flex-wrap: nowrap;
       flex: 1;
     }
-  }
-  &__Content:nth-child(even) {
-    display: flex;
-    justify-content: space-between;
-    flex: 1;
-    flex-direction: row-reverse;
-    z-index: 50;
-
-    @include respond(tab-port) {
-      flex-direction: column;
+    &:hover &-text:not(:hover) {
+      transform: scale(0.7) translate(-20px, 20px);
+      opacity: 0.6;
     }
   }
-  &-img {
-    width: 50%;
-    z-index: 50;
-
-    @include respond(tab-port) {
-      width: 100%;
-      z-index: 50;
+  &-header {
+    color: $color-font-light;
+    font-size: $header-h2;
+    margin-bottom: 2rem;
+    @include respond(desktop-small) {
+      font-size: $header-h3;
+      margin-bottom: 1rem;
     }
   }
 }
 
-.btn-offer {
-  transition: cubic-bezier(0.68, 0.53, 0, 1) 0.5s;
-}
-
-.btn-offer:hover {
-  background-color: $color-bacground;
-  color: $color-font-dark;
-  transform: translateY(-3px);
-}
-.btn-offer:active {
-  transform: translateY(1px);
-}
-
-h3,
 p {
-  color: $color-font-light;
+  color: $color-font-main;
 }
 h3,
 p {

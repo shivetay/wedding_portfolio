@@ -1,5 +1,6 @@
 @import '../../../styles/settings.scss';
 @import '../../../styles/mixins.scss';
+@import '../../../styles/global.scss';
 
 .Contact {
   display: flex;
@@ -8,13 +9,17 @@
   flex-direction: column;
   background: $color-main;
   height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../../../Images/tlo_kontakt.png');
 
   &__Container {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding: 2rem;
-    margin-top: 6rem;
+    z-index: 99;
 
     @include respond(tab-port) {
       flex-direction: column-reverse;
@@ -38,10 +43,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $color-third-opa;
-    border-radius: 5px;
-    box-shadow: 0 6px 6px -3px $color-dark-opa;
+    height: 45rem;
+    width: 45rem;
+    background-color: $color-bacground-second;
+    box-shadow: 10px 0 10px $color-dark-opa;
+    border-radius: 15px;
     font-size: $font-normal;
+
+    @include respond(tab-port) {
+      height: 50vh;
+    }
+
+    padding: 0 2.5rem;
     &-photo {
       width: 20%;
       margin: 2rem 0;
@@ -50,6 +63,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @include respond(tab-land) {
+        font-size: $font-medium;
+      }
       & a {
         font-size: $font-normal;
         padding: 4px;
@@ -62,13 +78,30 @@
     }
   }
   &-img {
-    width: 100%;
+    width: 100vh;
 
     @include respond(tab-port) {
-      width: 50%;
+      width: 50vh;
     }
   }
 }
 .icon {
   color: $hover-link;
+  margin: 5px 0;
+  @include respond(tab-land) {
+    font-size: $font-medium;
+  }
+}
+h3 {
+  @include respond(tab-land) {
+    font-size: $header-h4;
+    margin: 2rem 0;
+    padding: 1rem 0;
+  }
+}
+
+p {
+  @include respond(tab-land) {
+    font-size: $font-medium;
+  }
 }

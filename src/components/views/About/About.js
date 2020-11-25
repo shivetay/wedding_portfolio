@@ -2,31 +2,37 @@ import React from 'react';
 
 import './About.scss';
 
-import about from '../../../Images/about_photo.jpg';
+import about from '../../../Images/dorcia2.png';
 
 const About = () => {
   return (
     <section className='About'>
       <div className='About__Container'>
+        <h1>O Mnie</h1>
         <div className='About__Content'>
+          <div className='About__Text'>
+            <div className='About__Text-container'>
+              <p className='About__Text-paragraph'>
+                Mam na imię Dorota i jestem certyfikowanym konsultantem ślubnym
+                oraz event managerem. Jako absolwentka Historii Sztuki
+                Uniwersytetu Wrocławskiego, zachwycam się wszystkim co piękne
+                (tak, jest to słowo, którego - jak twierdzi mój mąż -
+                zdecydowanie nadużywam) i kreatywne. Mój świat jest
+                uporządkowany, wszystko jest w nim na swoim miejscu, a chaos
+                zagląda do niego bardzo rzadko. Dlatego planowanie i organizacja
+                to mój żywioł, a pozytywne nastawienie pomoże nam na pewno w
+                dobrym kontakcie i współpracy. Jeśli chcesz, żeby Twój ślub,
+                przyjęcie albo impreza były starannie zaplanowane i przygotowane
+                to daj mi znać, a ja wszystkim się zajmę. Zapraszam!
+              </p>
+            </div>
+          </div>
           <div className='About__Photo'>
             <img
               className='About__Photo-img'
               src={about}
               alt='Dorota Dawidowicz'
             />
-          </div>
-          <div className='About__Text'>
-            <div className='About__Text-container'>
-              <h2 className='About__Text-header'>Litwo! Ojczyzno moja!</h2>
-              <p className='About__Text-paragraph'>
-                Pierwsza z krzykiem podróżnego ściskał i z jego pierś powabną
-                suknię materyjalną, różową, jedwabną gors wycięty, kołnierzyk z
-                jutrzenką napotka się pomieszany, zły i w uczciwości, w skroń
-                ucałowawszy, uprzejmie pozdrowił. A na wychowanie poznano
-                stołeczne.
-              </p>
-            </div>
           </div>
         </div>
       </div>

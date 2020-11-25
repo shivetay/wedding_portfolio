@@ -4,79 +4,73 @@ import './Offer.scss';
 
 import Modal from '../../common/Modal/Modal';
 
+import button from '../../../Images/ciapka5.png';
+
 class Offer extends Component {
   state = {
     offerItem: [
       {
         id: 1,
-        offerImg:
-          'https://images.unsplash.com/photo-1520182062070-2e037a6fbbba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
-        offerText:
-          ' Wreszcie po całym domu dawne obyczaje swe rodzinne duszę utęsknioną',
-        offerHeader: 'Tadeusz',
+        offerHeader: 'Śluby i Wesela',
         modalText:
-          'modal text here lorem Widać, że nam się sprawa. My od siebie czuł choroby zaród. Krzyczano na Lombardzkiem polu. Jak mnie polityka nudzi. jeżeli z nim się kołem. W zamku sień wielka, jeszcze z jutrzenką napotka się jako po kryjomu kazał stoły.',
-        modalHeader: 'Sędzia, a Sędziego',
+          'Mówią, że to najważniejszy dzień w życiu. I ja się z tym zgadzam. A jeśli chcecie, żeby ten Wasz dzień był do tego niezapomniany i idealny, to z przyjemnością się tym zajmę. •	Kompleksowa organizacja ślubu i wesela Przygotowanie „od A do Z”. To ja szukam i umawiam wszystkich podwykonawców, zajmuję się całym przebiegiem przygotowań, by ostatecznie koordynować Wasz dzień. •	Częściowa organizacja ślubu i wesela Przygotowanie tych punktów w ślubnym harmonogramie, którymi Wy nie chcecie, lub nie możecie się zająć. •	Koordynacja ślubu i wesela Jeśli sami wszystko przygotowaliście, ale chcecie, żeby ktoś czuwał nad Waszym dniem, by wszystko było tak, jak sobie wymarzyliście, to to opcja jest właśnie dla Was`',
+        modalHeader: 'ŚLUBY I WESELA',
       },
       {
         id: 2,
-        offerImg:
-          'https://images.unsplash.com/photo-1537291167-7f1592be546c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80',
-        offerText:
-          ' Polski trzech mocarzów albo też same widzi sprzęty, też nie może.',
-        offerHeader: 'ogrodowych grządek',
+        offerHeader: 'Przyjęcia i Imprezy Rodzinne',
         modalText:
-          'Ostrej świecisz Bramie! Ty, co porabiał? Każdy, gdzie panieńskim rumieńcem dzięcielina pała a wzdycha do sieni siadł przy boku miał, w naukach postąpił choć najwymowniejsza. Ale co o czyjeś kolana pośliznęła się krzywi i jak znawcy,',
-        modalHeader: ' zamkowej sieni siadł',
+          'Chętnie zorganizuję dla Was niezapomniane przyjęcia i uroczystości rodzinne. Kameralnie, czy z pompą – to już zależy od Was•	Zaręczyny•	Chrzciny•	Babyshower •	Urodziny•	Okolicznościowe przyjęcia rodzinne•	Każde inne, o jakim marzycie',
+        modalHeader: 'PRZYJĘCIA I IMPREZY RODZINNE',
       },
       {
         id: 3,
-        offerImg:
-          'https://images.unsplash.com/photo-1524777313293-86d2ab467344?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
-        offerText: 'Rejent na polu szukała kogoś posadzić na konikach małe',
-        offerHeader: 'Bo nie był to mówiąc',
+        offerHeader: 'Spotkania i Imprezy Firmowe',
         modalText:
-          'grabliska suwane po francusku. Biegali wszyscy słuchali w ziemstwie i stoi wypisany każdy mimowolnie porządku i zabawiać lubił od baśni historyje gadał. On za dowód dobroci?',
-        modalHeader: 'Wtem pan Sędzia',
+          'Te duże i te małe – w końcu każdy chce czegoś innego. Dostosuję się do Waszych preferencji i przygotuję imprezę szytą na miarę•	Imprezy integracyjne stacjonarne•	Imprezy integracyjne wyjazdowe•	Spotkania biznesowe•	Imprezy firmowe okolicznościowe (świąteczne, karnawałowe, mikołajki, ogniska itp.)•	Eventy branżowe•	Inne ',
+        modalHeader: 'SPOTKANIA I IMPREZY FIRMOWE',
       },
     ],
     showModal: false,
   };
 
+  rnder;
+
   renderElements = () => {
     const { offerItem, showModal } = this.state;
     return (
-      <Fragment>
-        {offerItem.map((item) => {
-          return (
-            <div key={item.id} className='Offer__Content'>
-              <img
-                className='Offer-img'
-                src={item.offerImg}
-                alt='offer_photo'
-              />
-              <div className='Offer__Content-text'>
-                <h3>{item.offerHeader}</h3>
-                <p>{item.offerText}</p>
-                <button
-                  onClick={() => this.openModal(item.id)}
-                  className='btn btn-offer'>
-                  Więcej
-                </button>
-              </div>
-
-              <Modal
-                show={showModal === item.id}
-                classModal={'btn-offer'}
-                modalId={item.id}
-                modalHeader={item.modalHeader}
-                modalText={item.modalText}
-                close={() => this.closeModal()}
-              />
-            </div>
-          );
-        })}
-      </Fragment>
+      <div className='Offer__Conatiner'>
+        <h1 className='Offer-h1'>Oferta</h1>
+        <div key={offerItem.id} className='Offer__Content'>
+          {offerItem.map((item) => {
+            return (
+              <Fragment key={item.id}>
+                <div className='Offer__Content-text'>
+                  <h2 className='Offer-header'>{item.offerHeader}</h2>
+                  <button
+                    onClick={() => this.openModal(item.id)}
+                    className='btn btn-offer'>
+                    Więcej
+                  </button>
+                  <img
+                    className='Offer__Content-deco'
+                    src={button}
+                    alt='decom_element'
+                  />
+                </div>
+                <Modal
+                  show={showModal === item.id}
+                  classModal={'btn-offer'}
+                  modalId={item.id}
+                  modalHeader={item.modalHeader}
+                  modalText={item.modalText}
+                  close={() => this.closeModal()}
+                />
+              </Fragment>
+            );
+          })}
+        </div>
+      </div>
     );
   };
 
@@ -87,7 +81,7 @@ class Offer extends Component {
     this.setState({ showModal: false });
   };
   render() {
-    return <section className='Offer'>{this.renderElements()}</section>;
+    return <section className='Offer visible'>{this.renderElements()}</section>;
   }
 }
 

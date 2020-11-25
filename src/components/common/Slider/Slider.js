@@ -1,14 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 import './Slider.scss';
 
 import SliderImage from './SliderImage';
 
-import photo1 from '../../../Images/photo1.jpg';
-import photo2 from '../../../Images/photo2.jpg';
-import photo3 from '../../../Images/photo3.jpg';
-import photo4 from '../../../Images/photo4.jpg';
-import photo5 from '../../../Images/photo5.jpg';
+import photo1 from '../../../Images/001.JPG';
+import photo2 from '../../../Images/002.png';
+import photo3 from '../../../Images/003.png';
+import photo4 from '../../../Images/004.JPG';
+import photo5 from '../../../Images/005.png';
+import deco from '../../../Images/bohho_slider.png';
 
 class Slider extends Component {
   state = {
@@ -16,32 +17,32 @@ class Slider extends Component {
       {
         id: 1,
         src: photo1,
-        text: 'Far far away, behind the word mountains',
         alt: 'wedding_photo',
+        deco: deco,
       },
       {
         id: 2,
         src: photo2,
-        text: 'Far far away, behind the word mountains',
         alt: 'wedding_photo',
+        deco: deco,
       },
       {
         id: 3,
         src: photo3,
-        text: 'Far far away, behind the word mountains',
         alt: 'wedding_photo',
+        deco: deco,
       },
       {
         id: 4,
         src: photo4,
-        text: 'Far far away, behind the word mountains',
         alt: 'wedding_photo',
+        deco: deco,
       },
       {
         id: 5,
         src: photo5,
-        text: 'Far far away, behind the word mountains',
         alt: 'wedding_photo',
+        deco: deco,
       },
     ],
     activeImage: 0,
@@ -82,16 +83,17 @@ class Slider extends Component {
           return (
             <div
               className={`Slider__Slide ${
-                activeImage === item.id - 1 ? 'active' : ''
+                activeImage === item.id - 1 ? 'visible' : ''
               }`}
-              key={item.id}
-              style={{ transform: `translateX(${activeImage}%)` }}>
+              key={item.id}>
               <SliderImage
                 classTxt={'Slider__Slide-txt'}
                 classImg={'Slider__Slide-img'}
                 src={item.src}
                 text={item.text}
                 alt={item.alt}
+                deco={item.deco}
+                classDeco={'Slider__Slide-deco'}
               />
             </div>
           );
@@ -101,7 +103,7 @@ class Slider extends Component {
   };
 
   render() {
-    return <div>{this.renderImages()}</div>;
+    return <Fragment>{this.renderImages()}</Fragment>;
   }
 }
 

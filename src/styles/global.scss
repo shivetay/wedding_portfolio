@@ -1,7 +1,7 @@
 @import './settings.scss';
 @import './mixins.scss';
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500&display=swap" rel="stylesheet"');
 
 *,
 *::after,
@@ -12,8 +12,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  // background-color: $color-bacground;
+  font-family: 'Yantramanav', sans-serif;
 }
 
 html {
@@ -35,6 +34,16 @@ html {
 }
 
 /* headers */
+h1,
+h2,
+h3,
+h4 {
+  color: $color-font-dark;
+}
+h1 {
+  font-size: $header-h1;
+}
+
 h2 {
   font-size: $header-h2;
   margin-bottom: 4rem;
@@ -50,7 +59,6 @@ a:visited,
 a:active {
   text-decoration: none;
   cursor: pointer;
-  // color:$color-font-light;
 }
 
 /* lists */
@@ -81,14 +89,30 @@ p {
 }
 
 .btn-offer {
-  transition: 0.5s;
+  transition: cubic-bezier(0.68, 0.53, 0, 1) 0.5s;
+  background: none;
+  z-index: 999;
 }
 
 .btn-offer:hover {
-  background-color: $color-button-second;
-  color: $color-font-dark;
+  color: $color-hover;
   transform: translateY(-3px);
 }
 .btn-offer:active {
   transform: translateY(1px);
+}
+
+/* after background */
+.visible {
+  display: flex;
+  z-index: 90;
+}
+
+.visible::after {
+  position: absolute;
+  background: $color-dark;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  content: '';
 }
