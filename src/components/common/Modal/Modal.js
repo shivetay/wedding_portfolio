@@ -15,6 +15,22 @@ const ModalOverlay = ({
   classModal,
   close,
 }) => {
+  // const renderText = ({ modalText }) => {
+  //   return (
+  //     <Fragment>
+  //       {modalText.map((item) => {
+  //         return (
+  //           <div key={item.id}>
+  //             <p>{item.text}</p>
+  //             <ul>
+  //               <li>{item.list}</li>
+  //             </ul>
+  //           </div>
+  //         );
+  //       })}
+  //     </Fragment>
+  //   );
+  // };
   const content = (
     <div
       className={`Modal__Container ${className}`}
@@ -23,7 +39,16 @@ const ModalOverlay = ({
       }}>
       <div key={modalId} className={`Modal__Content ${className}`}>
         <h2>{modalHeader}</h2>
-        <div>{modalText}</div>
+        {modalText.map((item) => {
+          return (
+            <div key={item.id}>
+              <p>{item.text}</p>
+              <ul>
+                <li>{item.list}</li>
+              </ul>
+            </div>
+          );
+        })}
         <button className={`btn ${classModal}`} onClick={close}>
           Zamknij
         </button>
@@ -54,7 +79,7 @@ const Modal = (props) => {
 
 Modal.propTypes = {
   modalHeader: PropTypes.string.isRequired,
-  modalText: PropTypes.string.isRequired,
+  modalText: PropTypes.any,
   modalId: PropTypes.number.isRequired,
   classModal: PropTypes.string,
   className: PropTypes.string,
