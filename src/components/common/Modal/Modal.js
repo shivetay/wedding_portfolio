@@ -15,22 +15,6 @@ const ModalOverlay = ({
   classModal,
   close,
 }) => {
-  // const renderText = ({ modalText }) => {
-  //   return (
-  //     <Fragment>
-  //       {modalText.map((item) => {
-  //         return (
-  //           <div key={item.id}>
-  //             <p>{item.text}</p>
-  //             <ul>
-  //               <li>{item.list}</li>
-  //             </ul>
-  //           </div>
-  //         );
-  //       })}
-  //     </Fragment>
-  //   );
-  // };
   const content = (
     <div
       className={`Modal__Container ${className}`}
@@ -38,14 +22,15 @@ const ModalOverlay = ({
         display: show ? 'inline' : 'none',
       }}>
       <div key={modalId} className={`Modal__Content ${className}`}>
-        <h2>{modalHeader}</h2>
+        <h2 className='Modal__Header'>{modalHeader}</h2>
         {modalText.map((item) => {
           return (
-            <div key={item.id}>
-              <p>{item.text}</p>
-              <ul>
-                <li>{item.list}</li>
+            <div className='Modal__Content-text' key={item.id}>
+              <p className='Modal__Paragraph'>{item.intro}</p>
+              <ul className='Modal__List'>
+                <li className='Modal__List-item'>{item.list}</li>
               </ul>
+              <p className='Modal__Paragraph'>{item.text}</p>
             </div>
           );
         })}
@@ -79,7 +64,7 @@ const Modal = (props) => {
 
 Modal.propTypes = {
   modalHeader: PropTypes.string.isRequired,
-  modalText: PropTypes.any,
+  modalText: PropTypes.array,
   modalId: PropTypes.number.isRequired,
   classModal: PropTypes.string,
   className: PropTypes.string,

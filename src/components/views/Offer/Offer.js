@@ -15,21 +15,26 @@ class Offer extends Component {
         modalText: [
           {
             id: 1,
-            text:
-              'Chętnie zorganizuję dla Was niezapomniane przyjęcia i uroczystości rodzinne. Kameralnie, czy z pompą – to już zależy od Was',
-            list: 'Zaręczyny',
+            intro:
+              'Mówią, że to najważniejszy dzień w życiu. I ja się z tym zgadzam. A jeśli chcecie, żeby ten Wasz dzień był do tego niezapomniany i idealny, to z przyjemnością się tym zajmę',
           },
           {
             id: 2,
             text:
-              'Chętnie zorganizuję dla Was niezapomniane przyjęcia i uroczystości rodzinne. Kameralnie, czy z pompą – to już zależy od Was',
-            list: 'Zaręczyny',
+              'Przygotowanie „od A do Z”. To ja szukam i umawiam wszystkich podwykonawców, zajmuję się całym przebiegiem przygotowań, by ostatecznie koordynować Wasz dzień',
+            list: 'Kompleksowa organizacja ślubu i wesela ',
           },
           {
             id: 3,
             text:
-              'Chętnie zorganizuję dla Was niezapomniane przyjęcia i uroczystości rodzinne. Kameralnie, czy z pompą – to już zależy od Was',
-            list: 'Zaręczyny',
+              'Przygotowanie tych punktów w ślubnym harmonogramie, którymi Wy nie chcecie, lub nie możecie się zająć',
+            list: 'Częściowa organizacja ślubu i wesela ',
+          },
+          {
+            id: 4,
+            text:
+              'Jeśli sami wszystko przygotowaliście, ale chcecie, żeby ktoś czuwał nad Waszym dniem, by wszystko było tak, jak sobie wymarzyliście, to to opcja jest właśnie dla Was',
+            list: 'Koordynacja ślubu i wesela ',
           },
         ],
         modalHeader: 'Śluby i Wesela',
@@ -40,28 +45,31 @@ class Offer extends Component {
         modalText: [
           {
             id: 1,
-            text:
+            intro:
               'Chętnie zorganizuję dla Was niezapomniane przyjęcia i uroczystości rodzinne. Kameralnie, czy z pompą – to już zależy od Was',
-            list: 'Zaręczyny',
           },
           {
             id: 2,
-            list: 'Chrzciny',
+            list: 'Zaręczyny',
           },
           {
             id: 3,
-            list: 'Babyshower',
+            list: 'Chrzciny',
           },
           {
             id: 4,
-            list: 'Urodziny',
+            list: 'Babyshower',
           },
           {
             id: 5,
-            list: 'Okolicznościowe przyjęcia rodzinne',
+            list: 'Urodziny',
           },
           {
             id: 6,
+            list: 'Okolicznościowe przyjęcia rodzinne',
+          },
+          {
+            id: 7,
             list: 'Każde inne, o jakim marzycie',
           },
         ],
@@ -73,29 +81,32 @@ class Offer extends Component {
         modalText: [
           {
             id: 1,
-            text:
+            intro:
               'Te duże i te małe – w końcu każdy chce czegoś innego. Dostosuję się do Waszych preferencji i przygotuję imprezę szytą na miarę',
-            list: 'Imprezy integracyjne stacjonarne',
           },
           {
             id: 2,
-            list: 'Imprezy integracyjne wyjazdowe',
+            list: 'Imprezy integracyjne stacjonarne',
           },
           {
             id: 3,
-            list: 'Spotkania biznesowe',
+            list: 'Imprezy integracyjne wyjazdowe',
           },
           {
             id: 4,
+            list: 'Spotkania biznesowe',
+          },
+          {
+            id: 5,
             list:
               'Imprezy firmowe okolicznościowe (świąteczne, karnawałowe, mikołajki, ogniska itp.)',
           },
           {
-            id: 5,
+            id: 6,
             list: 'Eventy branżowe',
           },
           {
-            id: 6,
+            id: 7,
             list: 'Inne',
           },
         ],
