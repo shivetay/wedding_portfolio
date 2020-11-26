@@ -43,12 +43,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 45rem;
+    height: 48rem;
     width: 45rem;
-    background-color: $color-bacground-second;
-    box-shadow: 10px 0 10px $color-dark-opa;
+    // background-color: $color-bacground-second;
+    // box-shadow: 10px 0 10px $color-dark-opa;
     border-radius: 15px;
     font-size: $font-normal;
+    background-image: url('../../../Images/tlo_text-kontakt.png');
+    background-size: 100% 140%;
+    background-repeat: no-repeat;
+    background-position: center;
 
     @include respond(tab-port) {
       height: 50vh;
@@ -84,6 +88,13 @@
       width: 50vh;
     }
   }
+
+  &-paragraph {
+    font-size: $font-large;
+    // @include respond(tab-land) {
+    //   font-size: $font-medium;
+    // }
+  }
 }
 .icon {
   color: $hover-link;
@@ -97,11 +108,5 @@ h3 {
     font-size: $header-h4;
     margin: 2rem 0;
     padding: 1rem 0;
-  }
-}
-
-p {
-  @include respond(tab-land) {
-    font-size: $font-medium;
   }
 }
