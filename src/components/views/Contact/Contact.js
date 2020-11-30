@@ -17,12 +17,15 @@ const Contact = () => {
       <div className='Contact__Container'>
         <div className='Contact__Content'>
           {/* <h3>Bohho - organizacja ślubów i imprez</h3> */}
-          <p className='Contact-paragraph'>Wrocław</p>
-          <p className='Contact-paragraph'>NIP: 8992578165</p>
-          <FontAwesomeIcon className='icon' icon={faPhone} />
-          <p className='Contact-paragraph'>Tel.: 887-623-220</p>
-          <FontAwesomeIcon className='icon' icon={faEnvelope} />
-          <p className='Contact-paragraph'> kontakt@bohho.eu</p>
+          <div className='content'>
+            <FontAwesomeIcon className='icon' icon={faPhone} />
+            <p className='Contact-paragraph'>887-623-220</p>
+          </div>
+          <div className='content'>
+            <FontAwesomeIcon className='icon' icon={faEnvelope} />
+            <p className='Contact-paragraph'> kontakt@bohho.eu</p>
+          </div>
+
           <div className='Contact__Content-icons'>
             <a
               target='_blank'
@@ -37,6 +40,8 @@ const Contact = () => {
               <FontAwesomeIcon icon={faInstagram} />
             </a>
           </div>
+          <p className='Contact-paragraph-small'>Wrocław</p>
+          <p className='Contact-paragraph-small'>NIP: 8992578165</p>
           {/* <Form /> */}
         </div>
         {/* <div className='Contact__Header'>
