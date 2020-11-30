@@ -17,13 +17,15 @@ const About = () => {
                 oraz event managerem. Jako absolwentka Historii Sztuki
                 Uniwersytetu Wrocławskiego, zachwycam się wszystkim co piękne
                 (tak, jest to słowo, którego - jak twierdzi mój mąż -
-                zdecydowanie nadużywam) i kreatywne. Mój świat jest
-                uporządkowany, wszystko jest w nim na swoim miejscu, a chaos
-                zagląda do niego bardzo rzadko. Dlatego planowanie i organizacja
-                to mój żywioł, a pozytywne nastawienie pomoże nam na pewno w
-                dobrym kontakcie i współpracy. Jeśli chcesz, żeby Twój ślub,
-                przyjęcie albo impreza były starannie zaplanowane i przygotowane
-                to daj mi znać, a ja wszystkim się zajmę. Zapraszam!
+                zdecydowanie nadużywam) i kreatywne.
+                <br />
+                Mój świat jest uporządkowany, wszystko jest w nim na swoim
+                miejscu, a chaos zagląda do niego bardzo rzadko. Dlatego
+                planowanie i organizacja to mój żywioł, a pozytywne nastawienie
+                pomoże nam na pewno w dobrym kontakcie i współpracy. Jeśli
+                chcesz, żeby Twój ślub, przyjęcie albo impreza były starannie
+                zaplanowane i przygotowane to daj mi znać, a ja wszystkim się
+                zajmę. Zapraszam!
               </p>
             </div>
           </div>

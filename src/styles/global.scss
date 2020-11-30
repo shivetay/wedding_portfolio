@@ -10,6 +10,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: $font-paragraph;
+}
 
 html {
   /* 1rem = 10px; 16px - base font size  10px/16px = 62.5% */
@@ -36,6 +39,7 @@ h3,
 h4 {
   color: $color-font-dark;
   font-weight: 100;
+  font-family: $font-header;
 }
 h1 {
   font-size: $header-h1;
