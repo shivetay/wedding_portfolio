@@ -134,11 +134,11 @@ class Offer extends Component {
                     className='btn btn-offer'>
                     Więcej
                   </button>
-                  <img
+                  {/* <img
                     className='Offer__Content-deco'
                     src={button}
                     alt='decom_element'
-                  />
+                  /> */}
                 </div>
                 <Modal
                   show={showModal === item.id}
