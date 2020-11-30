@@ -16,7 +16,7 @@ function MobileNav({ navLinks }) {
                 exact
                 key={link.id}
                 to={link.to}
-                className={link.className}>
+                className='Navigation__Mobile-link'>
                 {link.name}
               </NavLink>
             </li>

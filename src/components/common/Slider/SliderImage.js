@@ -9,11 +9,13 @@ const SliderImage = ({ src, alt, classImg, classTxt, classDeco, deco }) => {
         <div className='Container-img'>
           <img className={classDeco} src={deco} alt='decoration element' />
         </div>
-        <p className={classTxt}>
-          Organizuję kompleksowo śluby, imprezy, uroczystości rodzinne oraz
-          przyjęcia. Zapraszam do zapoznania sie z ofertą i do kontaktu.
+        <div>
+          <h1 className={classTxt}>
+            Organizuję kompleksowo śluby, imprezy, uroczystości rodzinne oraz
+            przyjęcia. Zapraszam do zapoznania sie z ofertą i do kontaktu.
+          </h1>
           <p className='span'>Dorota</p>
-        </p>
+        </div>
       </div>
     </Fragment>
   );

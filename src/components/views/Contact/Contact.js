@@ -17,12 +17,12 @@ const Contact = () => {
       <div className='Contact__Container'>
         <div className='Contact__Content'>
           {/* <h3>Bohho - organizacja ślubów i imprez</h3> */}
-          <p>Wrocław</p>
-          <p>NIP: 8992578165</p>
+          <p className='Contact-paragraph'>Wrocław</p>
+          <p className='Contact-paragraph'>NIP: 8992578165</p>
           <FontAwesomeIcon className='icon' icon={faPhone} />
-          <p>Tel.: 887-623-220</p>
+          <p className='Contact-paragraph'>Tel.: 887-623-220</p>
           <FontAwesomeIcon className='icon' icon={faEnvelope} />
-          <p> kontakt@bohho.eu</p>
+          <p className='Contact-paragraph'> kontakt@bohho.eu</p>
           <div className='Contact__Content-icons'>
             <a
               target='_blank'

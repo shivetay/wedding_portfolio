@@ -8,8 +8,8 @@ const About = () => {
   return (
     <section className='About'>
       <div className='About__Container'>
-        <h1>O Mnie</h1>
         <div className='About__Content'>
+          <h1 className='About__Container-header'>O Mnie</h1>
           <div className='About__Text'>
             <div className='About__Text-container'>
               <p className='About__Text-paragraph'>

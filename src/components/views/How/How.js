@@ -13,7 +13,7 @@ const How = () => {
         <div className='How__Content'>
           <div className='How__Content-text'>
             <img className='How__Content-deco' src={deco} alt='deco_element' />
-            <h2 className='How__Content-header'>Kontakt</h2>
+            <h2 className='How__Content-header column'>Kontakt</h2>
             <p>
               Jeśli podejmiecie decyzję o tym, że chcecie przygotować dowolną
               imprezę, ale nie macie czasu, albo po prostu nie chce Wam się
@@ -22,7 +22,7 @@ const How = () => {
               albo wysłać maila, a ja oddzwonię.
             </p>
           </div>
-          <div className='How__Content-text'>
+          <div className='How__Content-text column'>
             <img className='How__Content-deco' src={deco} alt='deco_element' />
             <h2 className='How__Content-header'>Omówienie szczegółów</h2>
             <p>
@@ -34,7 +34,8 @@ const How = () => {
               imprezy i ode mnie.
             </p>
           </div>
-          <div className='How__Content-text'>
+
+          <div className='How__Content-text column'>
             <img className='How__Content-deco' src={deco} alt='deco_element' />
             <h2 className='How__Content-header'>Wycena i umowa</h2>
             <p>
@@ -43,7 +44,7 @@ const How = () => {
               podpisujemy umowę.
             </p>
           </div>
-          <div className='How__Content-text'>
+          <div className='How__Content-text column'>
             <img className='How__Content-deco' src={deco} alt='deco_element' />
             <h2 className='How__Content-header'>Działamy!</h2>
             <p>

@@ -22,8 +22,18 @@ const ModalOverlay = ({
         display: show ? 'inline' : 'none',
       }}>
       <div key={modalId} className={`Modal__Content ${className}`}>
-        <h2>{modalHeader}</h2>
-        <div>{modalText}</div>
+        <h2 className='Modal__Header'>{modalHeader}</h2>
+        {modalText.map((item) => {
+          return (
+            <div className='Modal__Content-text' key={item.id}>
+              <p className='Modal__Paragraph'>{item.intro}</p>
+              <ul className='Modal__List'>
+                <li className='Modal__List-item'>{item.list}</li>
+              </ul>
+              <p className='Modal__Paragraph'>{item.text}</p>
+            </div>
+          );
+        })}
         <button className={`btn ${classModal}`} onClick={close}>
           Zamknij
         </button>
@@ -54,7 +64,7 @@ const Modal = (props) => {
 
 Modal.propTypes = {
   modalHeader: PropTypes.string.isRequired,
-  modalText: PropTypes.string.isRequired,
+  modalText: PropTypes.array,
   modalId: PropTypes.number.isRequired,
   classModal: PropTypes.string,
   className: PropTypes.string,

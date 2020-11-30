@@ -1,48 +1,85 @@
 @import '../../../styles/settings.scss';
 @import '../../../styles/mixins.scss';
+@import '../../../styles/global.scss';
 
 .About {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row-reverse;
   height: 100vh;
-  overflow: hidden;
+  // overflow: hidden;
 
   &__Container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: nowrap;
     width: 100rem;
     height: 58rem;
     margin-right: 10rem;
+
+    @include respond(tab-port) {
+      margin-right: 0;
+    }
+
+    &-header {
+      flex: 1 0 92%;
+      align-self: center;
+      text-align: center;
+      @include respond(tab-port) {
+        margin-top: 22rem;
+        flex: 0 1 0;
+        order: 1;
+      }
+      @include respond(phone) {
+        margin-top: 0;
+      }
+    }
   }
   &__Content {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     height: 80%;
     width: 95%;
+    @include respond(tab-port) {
+      flex-wrap: wrap;
+      flex-flow: column-reverse;
+    }
   }
   &__Photo {
-    margin: 6rem 12rem 0 4rem;
+    flex: 1 0 26%;
+    display: flex;
+    @include respond(tab-port) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     &-img {
       border-radius: 5px;
-      width: 320%;
+      width: 160%;
       margin: 0 2rem;
       @include respond(tab-port) {
-        font-size: $font-medium;
-        width: 100%;
+        width: 60%;
+        order: 1;
+      }
+
+      @include respond(phone) {
+        margin: 0;
       }
     }
   }
   &__Text {
+    flex: 1 0 66%;
     color: $color-font-dark;
     display: inline-block;
     box-shadow: 0 10px 6px $color-dark-opa;
     border-radius: 15px;
     padding: 2rem;
+    @include respond(tab-port) {
+    }
 
     &-header {
       text-align: center;

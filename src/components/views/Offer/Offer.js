@@ -12,23 +12,105 @@ class Offer extends Component {
       {
         id: 1,
         offerHeader: 'Śluby i Wesela',
-        modalText:
-          'Mówią, że to najważniejszy dzień w życiu. I ja się z tym zgadzam. A jeśli chcecie, żeby ten Wasz dzień był do tego niezapomniany i idealny, to z przyjemnością się tym zajmę. •	Kompleksowa organizacja ślubu i wesela Przygotowanie „od A do Z”. To ja szukam i umawiam wszystkich podwykonawców, zajmuję się całym przebiegiem przygotowań, by ostatecznie koordynować Wasz dzień. •	Częściowa organizacja ślubu i wesela Przygotowanie tych punktów w ślubnym harmonogramie, którymi Wy nie chcecie, lub nie możecie się zająć. •	Koordynacja ślubu i wesela Jeśli sami wszystko przygotowaliście, ale chcecie, żeby ktoś czuwał nad Waszym dniem, by wszystko było tak, jak sobie wymarzyliście, to to opcja jest właśnie dla Was`',
-        modalHeader: 'ŚLUBY I WESELA',
+        modalText: [
+          {
+            id: 1,
+            intro:
+              'Mówią, że to najważniejszy dzień w życiu. I ja się z tym zgadzam. A jeśli chcecie, żeby ten Wasz dzień był do tego niezapomniany i idealny, to z przyjemnością się tym zajmę',
+          },
+          {
+            id: 2,
+            text:
+              'Przygotowanie „od A do Z”. To ja szukam i umawiam wszystkich podwykonawców, zajmuję się całym przebiegiem przygotowań, by ostatecznie koordynować Wasz dzień',
+            list: 'Kompleksowa organizacja ślubu i wesela ',
+          },
+          {
+            id: 3,
+            text:
+              'Przygotowanie tych punktów w ślubnym harmonogramie, którymi Wy nie chcecie, lub nie możecie się zająć',
+            list: 'Częściowa organizacja ślubu i wesela ',
+          },
+          {
+            id: 4,
+            text:
+              'Jeśli sami wszystko przygotowaliście, ale chcecie, żeby ktoś czuwał nad Waszym dniem, by wszystko było tak, jak sobie wymarzyliście, to to opcja jest właśnie dla Was',
+            list: 'Koordynacja ślubu i wesela ',
+          },
+        ],
+        modalHeader: 'Śluby i Wesela',
       },
       {
         id: 2,
         offerHeader: 'Przyjęcia i Imprezy Rodzinne',
-        modalText:
-          'Chętnie zorganizuję dla Was niezapomniane przyjęcia i uroczystości rodzinne. Kameralnie, czy z pompą – to już zależy od Was•	Zaręczyny•	Chrzciny•	Babyshower •	Urodziny•	Okolicznościowe przyjęcia rodzinne•	Każde inne, o jakim marzycie',
-        modalHeader: 'PRZYJĘCIA I IMPREZY RODZINNE',
+        modalText: [
+          {
+            id: 1,
+            intro:
+              'Chętnie zorganizuję dla Was niezapomniane przyjęcia i uroczystości rodzinne. Kameralnie, czy z pompą – to już zależy od Was',
+          },
+          {
+            id: 2,
+            list: 'Zaręczyny',
+          },
+          {
+            id: 3,
+            list: 'Chrzciny',
+          },
+          {
+            id: 4,
+            list: 'Babyshower',
+          },
+          {
+            id: 5,
+            list: 'Urodziny',
+          },
+          {
+            id: 6,
+            list: 'Okolicznościowe przyjęcia rodzinne',
+          },
+          {
+            id: 7,
+            list: 'Każde inne, o jakim marzycie',
+          },
+        ],
+        modalHeader: 'Przyjęcia i Imprezy Rodzinne',
       },
       {
         id: 3,
         offerHeader: 'Spotkania i Imprezy Firmowe',
-        modalText:
-          'Te duże i te małe – w końcu każdy chce czegoś innego. Dostosuję się do Waszych preferencji i przygotuję imprezę szytą na miarę•	Imprezy integracyjne stacjonarne•	Imprezy integracyjne wyjazdowe•	Spotkania biznesowe•	Imprezy firmowe okolicznościowe (świąteczne, karnawałowe, mikołajki, ogniska itp.)•	Eventy branżowe•	Inne ',
-        modalHeader: 'SPOTKANIA I IMPREZY FIRMOWE',
+        modalText: [
+          {
+            id: 1,
+            intro:
+              'Te duże i te małe – w końcu każdy chce czegoś innego. Dostosuję się do Waszych preferencji i przygotuję imprezę szytą na miarę',
+          },
+          {
+            id: 2,
+            list: 'Imprezy integracyjne stacjonarne',
+          },
+          {
+            id: 3,
+            list: 'Imprezy integracyjne wyjazdowe',
+          },
+          {
+            id: 4,
+            list: 'Spotkania biznesowe',
+          },
+          {
+            id: 5,
+            list:
+              'Imprezy firmowe okolicznościowe (świąteczne, karnawałowe, mikołajki, ogniska itp.)',
+          },
+          {
+            id: 6,
+            list: 'Eventy branżowe',
+          },
+          {
+            id: 7,
+            list: 'Inne',
+          },
+        ],
+        modalHeader: 'Spotkania i Imprezy Firmowe',
       },
     ],
     showModal: false,
@@ -52,11 +134,11 @@ class Offer extends Component {
                     className='btn btn-offer'>
                     Więcej
                   </button>
-                  <img
+                  {/* <img
                     className='Offer__Content-deco'
                     src={button}
                     alt='decom_element'
-                  />
+                  /> */}
                 </div>
                 <Modal
                   show={showModal === item.id}

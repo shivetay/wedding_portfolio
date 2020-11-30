@@ -17,16 +17,18 @@
 
   &__Container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 90%;
   }
+
   &__Content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     z-index: 99;
+
     &-text {
       position: relative;
       flex: 1;
@@ -39,8 +41,14 @@
       box-shadow: 0 8px 6px -6px $color-dark;
       border-radius: 15px;
 
+      @include respond(tab-land) {
+        flex: 33.333%;
+      }
+      @include respond(phone) {
+        flex: 50%;
+      }
+
       & p {
-        align-self: baseline;
         color: $color-font-light;
         & a {
           color: $color-font-light;
@@ -53,12 +61,27 @@
       top: -1%;
       left: -5%;
       z-index: 15;
+
+      @include respond(tab-land) {
+        width: 80%;
+        left: 10%;
+        top: 0;
+      }
+      @include respond(phone) {
+        width: 40%;
+        left: 30%;
+        top: 0;
+      }
     }
     &-header {
       font-size: $header-h4;
       color: $color-font-light;
       margin-bottom: 10rem;
       z-index: 20;
+
+      @include respond(tab-land) {
+        margin: 0 0 5rem 0;
+      }
     }
 
     &-text > * {
@@ -71,5 +94,11 @@
     font-size: $header-h1;
     text-align: center;
     z-index: 999;
+    @include respond(tab-land) {
+      margin: 10rem 0 0 0;
+    }
+    @include respond(phone) {
+      margin: 4rem 0 0 0;
+    }
   }
 }
