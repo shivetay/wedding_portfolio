@@ -93,6 +93,7 @@ p {
   transition: cubic-bezier(0.68, 0.53, 0, 1) 0.5s;
   background: none;
   z-index: 999;
+  color: $color-button-font;
 }
 
 .btn-offer:hover {

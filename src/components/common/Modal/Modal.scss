@@ -22,17 +22,27 @@
     width: 80rem;
     height: 60rem;
     border-radius: 10px;
-    background-color: $color-third-opa;
+    // background-color: $color-third-opa;
+    background-image: url('../../../Images/tlo_text-kontakt.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 150%;
+
     z-index: 999;
   }
   &__Header,
   &__Paragraph,
   &__List {
-    color: $color-font-light;
+    // color: $color-font-light;
+    color: $color-font-main;
+  }
+
+  &__Paragraph {
+    font-weight: 600;
   }
 
   &__List {
-    font-size: $font-medium;
+    font-size: $font-normal;
     font-weight: 600;
     margin-bottom: 10px;
   }
