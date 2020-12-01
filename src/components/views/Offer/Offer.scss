@@ -32,6 +32,14 @@
     align-items: center;
     flex-wrap: wrap;
     width: 90%;
+    z-index: 999;
+    @include respond(desktop-xbig) {
+      flex-direction: column;
+    }
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
   }
 
   &__Content {
@@ -54,13 +62,17 @@
       word-wrap: break-word;
       white-space: normal;
 
+      @include respond(desktop-xbig) {
+        margin-top: 2rem;
+      }
+
       @include respond(tab-port) {
         flex-direction: column;
         word-wrap: break-word;
         white-space: normal;
       }
       @include respond(phone) {
-        margin: 1rem 0 2.2rem 0;
+        margin: 4rem 0 2.2rem 0;
         word-wrap: break-word;
         white-space: normal;
       }
@@ -89,7 +101,7 @@
         width: 55%;
       }
       @include respond(phone) {
-        width: 75%;
+        width: 65%;
       }
     }
     &-text:hover {

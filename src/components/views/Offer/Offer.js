@@ -121,7 +121,7 @@ class Offer extends Component {
   renderElements = () => {
     const { offerItem, showModal } = this.state;
     return (
-      <div className='Offer__Conatiner'>
+      <div className='Offer__Container'>
         <h1 className='Offer-h1'>Oferta</h1>
         <div key={offerItem.id} className='Offer__Content'>
           {offerItem.map((item) => {
