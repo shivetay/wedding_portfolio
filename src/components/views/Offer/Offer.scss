@@ -18,7 +18,12 @@
     color: $color-font-light;
     font-size: $header-h1;
     text-align: center;
-    z-index: 999;
+    margin: 2rem 0 8rem 0;
+    z-index: 999 !important;
+
+    @include respond(desktop-small) {
+      margin: 2rem 0 0 0;
+    }
   }
 
   &__Container {
@@ -40,54 +45,53 @@
       flex: 1;
       display: flex;
       flex-wrap: wrap;
-      padding: 50px;
+      padding: 2rem 0 4rem 0;
       margin: 5px;
       text-align: center;
       transition: all 0.4s;
       opacity: 1;
-
-      background-image: url('../../../Images/kolo.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 50%;
-
       z-index: 100;
+      word-wrap: break-word;
+      white-space: normal;
+
       @include respond(tab-port) {
         flex-direction: column;
+        word-wrap: break-word;
+        white-space: normal;
       }
-
       @include respond(phone) {
-        background-size: 40%;
+        margin: 1rem 0 2.2rem 0;
+        word-wrap: break-word;
+        white-space: normal;
       }
     }
     &-text > * {
       flex: 1 1 100%;
     }
 
-    // &-deco {
-    //   position: absolute;
-    //   top: 60%;
-    //   left: 50%;
-    //   transform: translate(-50%, -50%);
-    //   width: 40%;
+    &-deco {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
 
-    //   // @include respond(desktop) {
-    //   //   top: 65%;
-    //   // }
-    //   @include respond(desktop-small) {
-    //     top: 63%;
-    //   }
-    //   @include respond(tab-land) {
-    //     top: 63%;
-    //   }
-
-    //   @include respond(tab-port) {
-    //     position: absolute;
-    //     top: 60%;
-    //     left: 50%;
-    //     transform: translate(-50%, -50%);
-    //   }
-    // }
+      @include respond(desktop) {
+        top: 65%;
+      }
+      @include respond(desktop-small) {
+        top: 63%;
+      }
+      @include respond(tab-land) {
+        top: 63%;
+      }
+      @include respond(tab-port) {
+        width: 55%;
+      }
+      @include respond(phone) {
+        width: 75%;
+      }
+    }
     &-text:hover {
       transform: scale(1.1) translateX(-20px);
     }
@@ -111,15 +115,35 @@
   &-header {
     color: $color-font-light;
     font-size: $header-h2;
-    margin-bottom: 2rem;
+    padding: 0 5rem;
+    margin: 8rem 0 2rem 0;
     text-transform: uppercase;
+    word-wrap: break-word;
+    word-break: break-word;
     @include respond(desktop-small) {
       font-size: $header-h3;
       margin-bottom: 1rem;
     }
+    @include respond(tab-port) {
+      word-wrap: break-word;
+      word-break: break-word;
+      white-space: normal;
+    }
+    @include respond(phone) {
+      font-size: $header-h4;
+      margin: 7rem 0 1rem 0;
+      word-wrap: break-word;
+      word-break: break-word;
+      white-space: normal;
+    }
   }
 }
 
+h1 {
+  z-index: 999;
+  word-wrap: break-word;
+  white-space: normal;
+}
 h3,
 p {
   margin-bottom: 1.2rem;
@@ -127,4 +151,12 @@ p {
 p {
   padding: 0 2rem;
   letter-spacing: 1px;
+}
+
+.btn2 {
+  color: $color-btutton-second !important;
+  transition: all 0.4s;
+}
+.btn2:hover {
+  color: $color-hover-second !important;
 }
