@@ -2,11 +2,11 @@ import React from 'react';
 
 import './About.scss';
 
-import about from '../../../Images/dorcia2.png';
+// import about from '../../../Images/dorcia2.png';
 
 const About = () => {
   return (
-    <section className='About'>
+    <section className='About visible'>
       <div className='About__Container'>
         <div className='About__Content'>
           <h1 className='About__Container-header'>O Mnie</h1>
@@ -31,13 +31,13 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className='About__Photo'>
+          {/* <div className='About__Photo'>
             <img
               className='About__Photo-img'
               src={about}
               alt='Dorota Dawidowicz'
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

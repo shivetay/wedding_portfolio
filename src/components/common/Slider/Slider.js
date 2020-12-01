@@ -4,10 +4,10 @@ import './Slider.scss';
 
 import SliderImage from './SliderImage';
 
-import photo1 from '../../../Images/001.JPG';
+import photo1 from '../../../Images/001.png';
 import photo2 from '../../../Images/002.png';
 import photo3 from '../../../Images/003.png';
-import photo4 from '../../../Images/004.JPG';
+import photo4 from '../../../Images/004.png';
 import photo5 from '../../../Images/005.png';
 import deco from '../../../Images/bohho_slider.png';
 

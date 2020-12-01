@@ -4,7 +4,7 @@ import './Offer.scss';
 
 import Modal from '../../common/Modal/Modal';
 
-import button from '../../../Images/ciapka5.png';
+import button from '../../../Images/kolo.png';
 
 class Offer extends Component {
   state = {
@@ -121,7 +121,7 @@ class Offer extends Component {
   renderElements = () => {
     const { offerItem, showModal } = this.state;
     return (
-      <div className='Offer__Conatiner'>
+      <div className='Offer__Container'>
         <h1 className='Offer-h1'>Oferta</h1>
         <div key={offerItem.id} className='Offer__Content'>
           {offerItem.map((item) => {
@@ -131,14 +131,14 @@ class Offer extends Component {
                   <h2 className='Offer-header'>{item.offerHeader}</h2>
                   <button
                     onClick={() => this.openModal(item.id)}
-                    className='btn btn-offer'>
+                    className='btn btn-offer btn2'>
                     Więcej
                   </button>
-                  {/* <img
+                  <img
                     className='Offer__Content-deco'
                     src={button}
                     alt='decom_element'
-                  /> */}
+                  />
                 </div>
                 <Modal
                   show={showModal === item.id}
