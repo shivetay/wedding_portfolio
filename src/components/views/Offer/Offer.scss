@@ -32,7 +32,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: 90%;
-    z-index: 999;
+    z-index: 990;
     @include respond(desktop-xbig) {
       flex-direction: column;
     }
