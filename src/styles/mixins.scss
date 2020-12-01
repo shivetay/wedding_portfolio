@@ -9,6 +9,7 @@
 - tab-land: for tablet landscape 900px
 - desktop-small: for 1000px
 - desktop 1200px
+- large-desktop 1600px
 */
 @mixin respond($brakepoint) {
   @if $brakepoint == phone {
@@ -38,7 +39,7 @@
     }
   }
   @if $brakepoint == desktop-big {
-    @media (min-width: $bp-desktop) {
+    @media (min-width: $bp-ldesktop) {
       @content;
     }
   }

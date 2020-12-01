@@ -66,6 +66,8 @@ $font-header: 'Cinzel', serif;
 
 /* Brakepoints */
 
+$bp-ldesktop: 100em; // 1400px/16 = 87,5em rozdzielczosc/16px
+// $bp-ldesktop: 88em; // 1400px/16 = 87,5em rozdzielczosc/16px
 $bp-desktop: 75em; // 1200px/16 = 75em rozdzielczosc/16px
 $bp-deskot-small: 63em; // 1000px/16
 $bp-tablet-landscape: 56em; // 900px
