@@ -19,21 +19,20 @@
     flex-direction: column;
     padding: 5rem;
     margin: 5rem auto;
-    width: 80rem;
-    height: 60rem;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
-    // background-color: $color-third-opa;
     background-image: url('../../../Images/tlo_text-kontakt.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 150%;
-
     z-index: 999;
+    @include respond(xxsmall) {
+    }
   }
   &__Header,
   &__Paragraph,
   &__List {
-    // color: $color-font-light;
     color: $color-font-main;
   }
 

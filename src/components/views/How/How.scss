@@ -51,6 +51,7 @@
 
       & p {
         color: $color-font-light;
+        margin-top: 2rem;
         & a {
           color: $color-font-light;
         }
@@ -83,15 +84,28 @@
         left: 30%;
         top: 0;
       }
+      @include respond(xsmall) {
+        top: 0;
+      }
     }
     &-header {
       font-size: $header-h4;
       color: $color-font-light;
       margin-bottom: 5rem;
       z-index: 20;
+      word-wrap: break-word;
+      word-break: break-word;
+      white-space: normal;
 
       @include respond(tab-land) {
         margin: 0 0 5rem 0;
+      }
+
+      @include respond(xsmall) {
+        margin: -2rem 0 2rem 0;
+        word-wrap: break-word;
+        word-break: break-word;
+        white-space: normal;
       }
     }
 
