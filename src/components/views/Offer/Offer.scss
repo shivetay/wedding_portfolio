@@ -19,7 +19,7 @@
     font-size: $header-h1;
     text-align: center;
     margin: 2rem 0 8rem 0;
-    z-index: 999 !important;
+    // z-index: 999 !important;
 
     @include respond(desktop-small) {
       margin: 2rem 0 0 0;
@@ -32,7 +32,6 @@
     align-items: center;
     flex-wrap: wrap;
     width: 90%;
-    z-index: 990;
     @include respond(desktop-xbig) {
       flex-direction: column;
     }
@@ -45,7 +44,7 @@
   &__Content {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     z-index: 100;
 
     &-text {
@@ -76,6 +75,12 @@
         word-wrap: break-word;
         white-space: normal;
       }
+      @include respond(xxsmall) {
+        margin: 0;
+        word-wrap: break-word;
+        word-break: break-word;
+        white-space: normal;
+      }
     }
     &-text > * {
       flex: 1 1 100%;
@@ -102,6 +107,9 @@
       }
       @include respond(phone) {
         width: 65%;
+      }
+      @include respond(xxsmall) {
+        width: 55%;
       }
     }
     &-text:hover {
@@ -148,15 +156,25 @@
       word-break: break-word;
       white-space: normal;
     }
+
+    @include respond(xxsmall) {
+      font-size: $font-large;
+      word-wrap: break-word;
+      word-break: break-word;
+      white-space: normal;
+    }
   }
 }
 
 h1 {
-  z-index: 999;
+  z-index: 990;
   word-wrap: break-word;
   white-space: normal;
 }
-h3,
+h2 {
+  z-index: 990;
+}
+h2,
 p {
   margin-bottom: 1.2rem;
 }
