@@ -14,8 +14,6 @@
   width: 100vw;
   background-image: url('../../../Images/about.png');
 
-  // overflow: hidden;
-
   &__Container {
     display: flex;
     align-items: center;
@@ -25,7 +23,6 @@
     width: 100rem;
     height: 58rem;
     margin-right: 10rem;
-    z-index: 999;
 
     @include respond(tab-port) {
       margin-right: 0;
@@ -36,15 +33,15 @@
       flex: 1 0 92%;
       align-self: center;
       text-align: center;
-      z-index: 999;
-      @include respond(tab-port) {
-        margin-top: 22rem;
-        flex: 0 1 0;
-        order: 1;
-      }
-      @include respond(phone) {
-        margin-top: 0;
-      }
+      z-index: 990;
+      // @include respond(tab-port) {
+      //   margin-top: 22rem;
+      //   flex: 0 1 0;
+      //   order: 1;
+      // }
+      // @include respond(phone) {
+      //   margin-top: 0;
+      // }
     }
   }
   &__Content {
@@ -54,70 +51,49 @@
     flex-wrap: wrap;
     height: 80%;
     width: 55%;
-    z-index: 999;
+    z-index: 990;
     @include respond(tab-port) {
-      flex-wrap: wrap;
-      flex-flow: column-reverse;
+      align-items: center;
+      justify-content: center;
     }
   }
-  // &__Photo {
-  //   flex: 1 0 26%;
-  //   display: flex;
-  //   @include respond(tab-port) {
-  //     display: flex;
-  //     justify-content: center;
-  //     align-items: center;
-  //   }
-  //   &-img {
-  //     border-radius: 5px;
-  //     width: 160%;
-  //     margin: 0 2rem;
-  //     @include respond(tab-port) {
-  //       width: 60%;
-  //       order: 1;
-  //     }
 
-  //     @include respond(phone) {
-  //       margin: 0;
-  //     }
-  //   }
-  // }
   &__Text {
     position: relative;
-    // display: flex;
-    // align-items: flex-end;
-    // justify-content: flex-end;
-    // align-self: flex-end;
-    flex: 1 0 66%;
+    flex: 1 0 100%;
     color: $color-font-light;
     display: inline-block;
-    // background-color: $color-bacground;
-    box-shadow: 0 10px 6px $color-main-opa;
+    // box-shadow: 0 10px 6px $color-main-opa;
     border-radius: 15px;
-    z-index: 999;
-    @include respond(tab-port) {
-    }
+    z-index: 990;
 
     &-container {
-      // background-color: $color-bacground;
-      box-shadow: 0 10px 6px $color-main-opa;
       border-radius: 15px;
       position: absolute;
       top: -40rem;
       left: 80%;
-      // transform: translateY(-50%);
       width: 100%;
+      height: 80%;
       z-index: 999;
-      // align-self: flex-end;
+
+      @include respond(desktop) {
+        left: 55%;
+      }
+      @include respond(desktop-small) {
+        left: 50%;
+      }
+      @include respond(tab-land) {
+        top: -45rem;
+      }
+      @include respond(tab-port) {
+        top: 0;
+        left: 50%;
+        position: initial;
+      }
     }
 
     &-header {
       text-align: center;
-      // margin-bottom: 2rem;
-    }
-    &-paragraph {
-      color: $color-font-light;
-      z-index: 999;
     }
     &-paragraph {
       line-height: 1.3;

@@ -2,8 +2,6 @@ import React from 'react';
 
 import './About.scss';
 
-// import about from '../../../Images/dorcia2.png';
-
 const About = () => {
   return (
     <section className='About visible'>
@@ -31,13 +29,6 @@ const About = () => {
               </p>
             </div>
           </div>
-          {/* <div className='About__Photo'>
-            <img
-              className='About__Photo-img'
-              src={about}
-              alt='Dorota Dawidowicz'
-            />
-          </div> */}
         </div>
       </div>
     </section>
