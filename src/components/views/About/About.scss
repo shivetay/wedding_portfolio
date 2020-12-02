@@ -34,14 +34,6 @@
       align-self: center;
       text-align: center;
       z-index: 990;
-      // @include respond(tab-port) {
-      //   margin-top: 22rem;
-      //   flex: 0 1 0;
-      //   order: 1;
-      // }
-      // @include respond(phone) {
-      //   margin-top: 0;
-      // }
     }
   }
   &__Content {
@@ -55,6 +47,9 @@
     @include respond(tab-port) {
       align-items: center;
       justify-content: center;
+    }
+    @include respond(xsmall) {
+      width: 100%;
     }
   }
 
