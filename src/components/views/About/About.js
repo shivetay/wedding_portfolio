@@ -9,9 +9,9 @@ const About = () => {
     <section className='About visible'>
       <div className='About__Container'>
         <div className='About__Content'>
-          <h1 className='About__Container-header'>O Mnie</h1>
           <div className='About__Text'>
             <div className='About__Text-container'>
+              <h1 className='About__Container-header'>O Mnie</h1>
               <p className='About__Text-paragraph'>
                 Mam na imię Dorota i jestem certyfikowanym konsultantem ślubnym
                 oraz event managerem. <br />
