@@ -25,10 +25,13 @@
     background-image: url('../../../Images/modal.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 110%;
+    background-size: 100% 125%;
     z-index: 999;
     @include respond(desktop-xbig) {
-      background-size: 75% 110%;
+      background-size: 85% 110%;
+    }
+    @include respond(phone) {
+      background-size: 85% 115%;
     }
 
     &-text {
@@ -40,14 +43,26 @@
   &__List {
     color: $color-font-main;
   }
+  &__Header {
+    @include respond(xsmall) {
+      margin: 1rem 0;
+    }
+  }
 
   &__Paragraph {
     text-align: center;
     font-weight: 600;
+    font-size: $font-large;
+    @include respond(phone) {
+      font-size: $font-medium;
+    }
+    @include respond(xxsmall) {
+      font-size: $font-small;
+    }
   }
 
   &__List {
-    font-size: $font-normal;
+    font-size: $font-large;
     font-weight: 600;
     margin-bottom: 10px;
   }
