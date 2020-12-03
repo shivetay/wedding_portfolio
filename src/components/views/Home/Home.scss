@@ -1,0 +1,13 @@
+@import '../../../styles/settings.scss';
+@import '../../../styles/mixins.scss';
+@import '../../../styles/global.scss';
+
+.Home {
+  @include respond(tab-port) {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../../Images/005.png');
+  }
+}
