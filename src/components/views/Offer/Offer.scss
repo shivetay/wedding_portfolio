@@ -19,8 +19,9 @@
     font-size: $header-h1;
     text-align: center;
     margin: 2rem 0 8rem 0;
-    // z-index: 999 !important;
-
+    @include respond(desktop-xbig) {
+      margin: 0 0 18rem 0;
+    }
     @include respond(desktop-small) {
       margin: 2rem 0 0 0;
     }
@@ -51,9 +52,11 @@
       position: relative;
       flex: 1;
       display: flex;
+      align-items: center;
+      justify-content: center;
       flex-wrap: wrap;
       padding: 2rem 0 4rem 0;
-      margin: 5px;
+      margin: 1rem;
       text-align: center;
       transition: all 0.4s;
       opacity: 1;
@@ -62,7 +65,7 @@
       white-space: normal;
 
       @include respond(desktop-xbig) {
-        margin-top: 2rem;
+        margin: 2rem 0;
       }
 
       @include respond(tab-port) {
@@ -106,10 +109,15 @@
         width: 55%;
       }
       @include respond(phone) {
-        width: 65%;
+        width: 70%;
+        top: 53%;
+      }
+      @include respond(xsmall) {
+        // width: 75%;
+        top: 53%;
       }
       @include respond(xxsmall) {
-        width: 55%;
+        width: 70%;
       }
     }
     &-text:hover {
@@ -133,6 +141,9 @@
     }
   }
   &-header {
+    display: inline-block;
+    width: 80%;
+    text-emphasis: center;
     color: $color-font-light;
     font-size: $header-h2;
     padding: 0 5rem;
@@ -140,6 +151,7 @@
     text-transform: uppercase;
     word-wrap: break-word;
     word-break: break-word;
+
     @include respond(desktop-small) {
       font-size: $header-h3;
       margin-bottom: 1rem;
@@ -150,15 +162,14 @@
       white-space: normal;
     }
     @include respond(phone) {
-      font-size: $header-h4;
-      margin: 7rem 0 1rem 0;
+      font-size: $font-large;
       word-wrap: break-word;
       word-break: break-word;
       white-space: normal;
     }
 
     @include respond(xxsmall) {
-      font-size: $font-large;
+      font-size: $font-normal;
       word-wrap: break-word;
       word-break: break-word;
       white-space: normal;

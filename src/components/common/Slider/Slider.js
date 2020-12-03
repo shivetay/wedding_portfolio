@@ -51,7 +51,7 @@ class Slider extends Component {
   componentDidMount() {
     setInterval(() => {
       this.goRight();
-    }, 10000);
+    }, 6500);
   }
 
   goLeft = (value, e) => {
