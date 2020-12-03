@@ -1,0 +1,15 @@
+{
+  "short_name": "bohho.eu",
+  "name": "bohho - organizajca ślubów i imprez ",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "bohho.eu",
+  "display": "standalone",
+  "theme_color": "#fffcf8",
+  "background_color": "#fffbfb"
+}

@@ -14,7 +14,7 @@ const SliderImage = ({ src, alt, classImg, classTxt, classDeco, deco }) => {
             Organizuję kompleksowo śluby, imprezy, uroczystości rodzinne oraz
             przyjęcia. Zapraszam do zapoznania sie z ofertą i do kontaktu.
           </h1>
-          <h3 className='span'>Dorota</h3>
+          {/* <h3 className='span'>Dorota</h3> */}
         </div>
       </div>
     </Fragment>
