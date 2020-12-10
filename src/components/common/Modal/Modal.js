@@ -6,6 +6,8 @@ import { CSSTransition } from 'react-transition-group';
 import './Modal.scss';
 import BackDrop from '../BackDrop/BackDrop';
 
+import deco from '../../../Images/ciapka2_3.png';
+
 const ModalOverlay = ({
   className,
   modalHeader,
