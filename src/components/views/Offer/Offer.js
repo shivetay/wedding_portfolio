@@ -50,27 +50,27 @@ class Offer extends Component {
           },
           {
             id: 2,
-            list: 'Zaręczyny',
+            text: 'Zaręczyny',
           },
           {
             id: 3,
-            list: 'Chrzciny',
+            text: 'Chrzciny',
           },
           {
             id: 4,
-            list: 'Babyshower',
+            text: 'Babyshower',
           },
           {
             id: 5,
-            list: 'Urodziny',
+            text: 'Urodziny',
           },
           {
             id: 6,
-            list: 'Okolicznościowe przyjęcia rodzinne',
+            text: 'Okolicznościowe przyjęcia rodzinne',
           },
           {
             id: 7,
-            list: 'Każde inne, o jakim marzycie',
+            text: 'Każde inne, o jakim marzycie',
           },
         ],
         modalHeader: 'Przyjęcia i Imprezy Rodzinne',
@@ -86,28 +86,28 @@ class Offer extends Component {
           },
           {
             id: 2,
-            list: 'Imprezy integracyjne stacjonarne',
+            text: 'Imprezy integracyjne stacjonarne',
           },
           {
             id: 3,
-            list: 'Imprezy integracyjne wyjazdowe',
+            text: 'Imprezy integracyjne wyjazdowe',
           },
           {
             id: 4,
-            list: 'Spotkania biznesowe',
+            text: 'Spotkania biznesowe',
           },
           {
             id: 5,
-            list:
+            text:
               'Imprezy firmowe okolicznościowe (świąteczne, karnawałowe, mikołajki, ogniska itp.)',
           },
           {
             id: 6,
-            list: 'Eventy branżowe',
+            text: 'Eventy branżowe',
           },
           {
             id: 7,
-            list: 'Inne',
+            text: 'Inne',
           },
         ],
         modalHeader: 'Spotkania i Imprezy Firmowe',

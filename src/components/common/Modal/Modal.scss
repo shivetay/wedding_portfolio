@@ -62,6 +62,9 @@
     font-size: $font-large;
     font-weight: 600;
     margin-bottom: 10px;
+    &-item {
+      text-decoration: underline;
+    }
   }
 }
 
