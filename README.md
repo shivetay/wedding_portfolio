@@ -1,4 +1,4 @@
-# bohho.eu
+# [bohho.eu](www.bohho.eu)
 
 This is a protfolio site for event planning bohho.eu 🥳.
 
